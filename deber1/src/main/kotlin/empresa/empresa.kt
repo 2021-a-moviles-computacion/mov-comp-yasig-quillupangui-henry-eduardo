@@ -70,7 +70,7 @@ fun registrarEmpresa(): Empresa? {
         nombre = readLine() as String
         println("Ingrese el pais de la empresa")
         pais = readLine() as String
-        println("Ingrese el año de fundacion de la empresa (0.0)")
+        println("Ingrese el año de fundacion de la empresa")
         anio = readLine()?.toDouble()!!
 
     } catch (eRead1: NumberFormatException) {
@@ -104,7 +104,7 @@ fun actualizarEmpresa(
         nombre = readLine() as String
         println("Ingrese el nuevo pais de la empresa")
         pais = readLine() as String
-        println("Ingrese el anio de la empresa")
+        println("Ingrese el año de la empresa")
         anio = readLine()?.toDouble()!!
 
 
