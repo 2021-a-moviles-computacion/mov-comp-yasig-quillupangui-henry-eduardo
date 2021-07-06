@@ -4,8 +4,8 @@ import kotlin.system.exitProcess
 fun main() {
 
     //Creacion de listas y carga inicial
-    val listaSucursal: ArrayList<Libro> = cargarSucursal()
-    val listaEmpresa: ArrayList<Autor> = cargarEmpresa()
+    val listaSucursal: ArrayList<Sucursal> = cargarSucursal()
+    val listaEmpresa: ArrayList<Empresa> = cargarEmpresa()
 
 
     var seleccion:Int
@@ -38,8 +38,8 @@ fun main() {
                     borrar(listaSucursal, listaEmpresa)
                 }
                 5 -> {
-                    guardarLibros(listaSucursal)
-                    guardarAutores(listaEmpresa)
+                    guardarSucursales(listaSucursal)
+                    guardarEmpresas(listaEmpresa)
 
                     exitProcess(0)
                 }
@@ -78,7 +78,7 @@ fun imprimirConflictos(opcion: Int = 0) {
             println("Opción no encontrada\n")
         }
         1 -> {
-            println("La opcion ingresada no es correcta)
+            println("La opcion ingresada no es correcta\n")
         }
         2 -> {
             println("Elemento no encontrado\n")

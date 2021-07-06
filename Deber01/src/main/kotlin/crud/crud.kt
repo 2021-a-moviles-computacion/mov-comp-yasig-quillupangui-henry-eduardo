@@ -1,20 +1,20 @@
 fun crear(
-    listaLibros: ArrayList<Libro>,
-    listaAutores: ArrayList<Autor>
+    listaSucursales: ArrayList<Sucursal>,
+    listaEmpresas: ArrayList<AEmpresa>
 
 ){
     println(
-        "Desea Ingresar: " +
-                "\n1- Libros" +
-                "\n2- Autores"
+        "¿Qué desea ingresar? " +
+                "\n1- Sucursales" +
+                "\n2- Empresas"
     )
     try {
         when (readLine()?.toInt() as Int) {
             1 -> {
-                crearUno(listaLibros)
+                crearUno(listaSucursales)
             }
             2 -> {
-                crearDos(listaAutores)
+                crearDos(listaEmpresas)
             }
 
             else -> {
@@ -28,51 +28,41 @@ fun crear(
 }
 
 fun crearUno(
-    listaLibros: ArrayList<Libro>
+    listaSucursales: ArrayList<Sucursal>
 ){
-    val libroAux: Libro? = registrarLibro()
-    if (libroAux != null) {
-        listaLibros.add(libroAux)
+    val sucursalAux: Sucursal? = registrarSucursal()
+    if (sucursalAux != null) {
+        listaSucursales.add(sucursalAux)
         imprimirExito(0)
     }
 }
 
 fun crearDos(
-    listaAutores: ArrayList<Autor>
+    listaEmpresas: ArrayList<Empresa>
 ){
-    val autorAux: Autor? = registrarAutor()
-    if (autorAux != null) {
-        listaAutores.add(autorAux)
+    val empresaAux: Empresa? = registrarEmpresa()
+    if (empresaAux != null) {
+        listaEmpresas.add(empresaAux)
         imprimirExito(0)
     }
 }
 
-
-
-
-
-
-
-
-//////////********BORRAR***************************////////////////////
-
-
 fun borrar(
-    listaLibros: ArrayList<Libro>,
-    listaAutores: ArrayList<Autor>
+    listaSucursales: ArrayList<Sucursales>,
+    listaEmpresas: ArrayList<Empresa>
 ){
     println(
         "Desea Eliminar: " +
-                "\n1- Libros" +
-                "\n2- Autores"
+                "\n1- Sucursales" +
+                "\n2- Empresas"
     )
     try {
         when (readLine()?.toInt() as Int) {
             1 -> {
-                eliminarUno(listaLibros, listaAutores)
+                eliminarUno(listaEmpresas, listaSucursales)
             }
             2 -> {
-                eliminarDos(listaAutores)
+                eliminarDos(listaEmpresas)
             }
             else -> imprimirError(0)
         }
@@ -82,30 +72,30 @@ fun borrar(
 }
 
 fun eliminarUno(
-    listaLibros: ArrayList<Libro>,
-    listaAutores: ArrayList<Autor>
+    listaSucursales: ArrayList<Sucursal>,
+    listaEmpresas: ArrayList<Empresa>
 ){
-    println("Ingrese el id del libro a eliminar:\n")
+    println("Ingrese el id de la empresa a eliminar:\n")
     try {
         val ingreso = readLine() as String
-        val libroID: Libro? = buscarLibroID(listaLibros, ingreso)
+        val sucursalID: Sucursal? = buscarSucursalID(listaSucursales, ingreso)
         val confirmacion: String?
-        if (libroID != null) {
-            println("Informacion del libro a eliminar:")
-            println(libroID)
+        if (sucursalID != null) {
+            println("Informacion de la empresa que se va eliminar:")
+            println(sucursalID)
             try {
                 println(
-                    "¿Está seguro de eliminar del libro?\n" +
+                    "¿Está seguro de eliminar la sucursal?\n" +
                             "Ingrese 1 si está seguro\n" +
-                            "Ingrese 0 si no desea eliminarlo"
+                            "Ingrese 0 para cancelar"
                 )
                 confirmacion = readLine()
                 if (confirmacion.equals("1")) {
 //                    listaAutores.removeIf { autores ->
 //                        autores.libro.idLibro.equals(ingreso)
 //                    }
-                    listaLibros.removeIf { libro ->
-                        (libro.idLibro.equals(ingreso))
+                    listaSucursales.removeIf { sucursal ->
+                        (sucursal.idSucursal.equals(ingreso))
                     }
                 } else {
                     imprimirError(3)
@@ -122,31 +112,31 @@ fun eliminarUno(
 }
 
 fun eliminarDos(
-    listaAutores: ArrayList<Autor>,
+    listaEmpresas: ArrayList<Empresa>,
     // listaReparto: ArrayList<Reparto>
 ){
-    println("Ingrese el id del autor que desea eliminar\n")
-    imprimirAutores(listaAutores)
+    println("Ingrese el id de la empresa que desea eliminar\n")
+    imprimirEmpresas(listaEmpresas)
     try {
         val entrada = readLine()?.toInt() as Int
-        val actorID: Autor? = buscarAutorID(listaAutores, entrada)
+        val empresaID: Empresa? = buscarEmpresaID(listaEmpresas, entrada)
         val seguro: String?
-        if (actorID != null) {
-            println("Información actual del actor:")
-            println(actorID)
+        if (empresaID != null) {
+            println("Información actual de la empresa:")
+            println(empresaID)
             try {
                 println(
-                    "¿Está seguro de eliminar el autor?\n" +
+                    "¿Está seguro de eliminar la empresa?\n" +
                             "Ingrese 1 si está seguro\n" +
-                            "Ingrese 0 si no desea eliminarlo"
+                            "Ingrese 0 para cancelar"
                 )
                 seguro = readLine()
                 if (seguro.equals("1")) {
 //                    listaAutores.removeIf { reparto ->
 //                        reparto.autor.idAutor == entrada
 //                    }
-                    listaAutores.removeIf { autor ->
-                        (autor.idAutor == entrada)
+                    listaEmpresas.removeIf { empresa ->
+                        (empresa.idEmpresa == entrada)
                     }
                 } else {
                     imprimirError(3)
@@ -162,28 +152,23 @@ fun eliminarDos(
     }
 }
 
-
-
-////////*************************UPDATE*******************
-
-
 fun actualizar(
-    listaLibros: ArrayList<Libro>,
-    listaAutores: ArrayList<Autor>
+    listaSucursales: ArrayList<Sucursal>,
+    listaEmpresas: ArrayList<Empresa>
 ){
     println(
         "Desea actualizar: " +
-                "\n1- Libros" +
-                "\n2- Autores"
+                "\n1- Sucursales" +
+                "\n2- Empresas"
     )
     try {
 
         when (readLine()?.toInt() as Int) {
             1 -> {
-                actualizarUno(listaLibros)
+                actualizarUno(listaSucursales)
             }
             2 -> {
-                actualizarDos(listaAutores)
+                actualizarDos(listaEmpresas)
             }
             else -> {
                 imprimirError(0)
@@ -195,36 +180,36 @@ fun actualizar(
 }
 
 fun actualizarUno(
-    listaLibros: ArrayList<Libro>,
+    listaSucursales: ArrayList<Sucursal>,
     //  listaAutores: ArrayList<Autor>
 ){
-    println("Ingrese el id del libro a actualizar:\n")
+    println("Ingrese el id de la sucursal a actualizar:\n")
 
     try {
 
         val entrada = readLine() as String
-        val libroID: Libro? = buscarLibroID(listaLibros, entrada)
-        val updateLibro: Libro?
-        if (libroID != null) {
-            println("Información actual de la libro:")
-            println(libroID)
-            updateLibro = actualizarLibros(libroID)
+        val sucursalID: Sucursal? = buscarSucursalID(listaSucursales, entrada)
+        val updateSucursal: Sucursal?
+        if (sucursalID != null) {
+            println("Información actual de la sucursal:")
+            println(sucursalID)
+            updateSucursal = actualizarSucursales(sucursalID)
 
-            listaLibros.removeIf { libro ->
-                (libro.idLibro.equals(entrada))
+            listaSucursales.removeIf { sucursal ->
+                (sucursal.idSucursal.equals(entrada))
             }
-            if (updateLibro != null) {
-                var libroAux: Libro? = null
-                listaLibros.add(updateLibro)
-                listaLibros.forEach { libro ->
-                    if (libro.idLibro.equals(updateLibro.idLibro)) {
-                        libroAux = libro
+            if (updateSucursal != null) {
+                var SucursalAux: Sucursal? = null
+                listaSucursales.add(updateSucursal)
+                listaSucursales.forEach { sucursal ->
+                    if (sucursal.idSucursal.equals(updateSucursal.idSucursal)) {
+                        sucursalAux = sucursal
                     }
                 }
-                listaLibros.removeIf { reparto ->
-                    reparto.idLibro.equals(updateLibro.idLibro)
+                listaSucursales.removeIf { reparto ->
+                    reparto.idSucursal.equals(updateSucursal.idSucursal)
                 }
-                if (libroAux != null) {
+                if (sucursalAux != null) {
 //                    listaLibros.add(
 //                        Libro(
 //                          //  updateLibro,
@@ -235,7 +220,7 @@ fun actualizarUno(
 //                    )
                     println(
                         "Informacion Actualizada:\n" +
-                                "+${updateLibro}"
+                                "+${updateSucursal}"
                     )
                     imprimirExito(2)
                 }
@@ -249,38 +234,38 @@ fun actualizarUno(
 }
 
 fun actualizarDos(
-    listaAutores: ArrayList<Autor>,
+    listaEmpresas: ArrayList<Empresa>,
 
     ){
-    println("Ingrese el id del autor que desea actualizar\n")
+    println("Ingrese el id de la empresa que desea actualizar\n")
     try {
 
-        val autor = readLine()?.toInt() as Int
-        val autorID: Autor? = buscarAutorID(listaAutores, autor)
-        val updateAutor: Autor?
-        if (autorID != null) {
-            println("Información actual del autor:")
-            println(autorID)
-            updateAutor = actualizarAutor(autorID)
-            listaAutores.removeIf { actor1 ->
-                (actor1.idAutor == autor)
+        val empresa = readLine()?.toInt() as Int
+        val empresaID: Empresa? = buscarEmpresaID(listaEmpresas, empresa)
+        val updateEmpresa: Empresa?
+        if (empresaID != null) {
+            println("Información actual de la empresa:")
+            println(empresaID)
+            updateEmpresa = actualizarEmpresa(empresaID)
+            listaEmpresas.removeIf { actor1 ->
+                (actor1.idEmpresas == empresa)
             }
-            if (updateAutor != null) {
-                var repartoAux: Autor? = null
-                listaAutores.add(updateAutor)
+            if (updateEmpresa != null) {
+                var repartoAux: Empresa? = null
+                listaEmpresas.add(updateEmpresa)
 
-                listaAutores.forEach { reparto ->
-                    if (reparto.idAutor == updateAutor.idAutor) {
+                listaEmpresas.forEach { reparto ->
+                    if (reparto.idEmpresa == updateEmpresa.idEmpresa) {
                         repartoAux = reparto
                     }
                 }
-                listaAutores.removeIf { reparto ->
-                    reparto.idAutor == updateAutor.idAutor
+                listaEmpresas.removeIf { reparto ->
+                    reparto.idEmpresa == updateEmpresa.idEmpresa
                 }
 //
                 println(
                     "Informacion actualizada:\n" +
-                            "+${updateAutor}"
+                            "+${updateEmpresa}"
                 )
             }
         } else {
@@ -298,23 +283,23 @@ fun actualizarDos(
 ////////////////*****************************buscar********
 
 fun leer(
-    listaLibros: ArrayList<Libro>,
-    listaAutores: ArrayList<Autor>
+    listaSucursales: ArrayList<Sucursal>,
+    listaEmpresas: ArrayList<Empresa>
 ){
     println(
         "¿Qué desea ver?: " +
-                "\n1- Libros" +
-                "\n2- Autores"
+                "\n1- Sucursales" +
+                "\n2- Empresas"
 
     )
     try {
 
         when (readLine()?.toInt() as Int) {
             1 -> {
-                opcionR1(listaLibros)
+                opcionR1(listaSucursales)
             }
             2 -> {
-                opcionR2(listaAutores)
+                opcionR2(listaEmpresas)
             }
 
             else -> {
@@ -329,17 +314,17 @@ fun leer(
 
 
 fun opcionR1(
-    listaLibros: ArrayList<Libro>
+    listaSucursales: ArrayList<Sucursal>
 ){
-    println("Lista Libros")
-    imprimirLibros(listaLibros)
+    println("Lista Sucursales")
+    imprimirSucursales(listaSucursales)
     imprimirExito(1)
 }
 
 fun opcionR2(
-    listaAutores: ArrayList<Autor>
+    listaEmpresas: ArrayList<Empresa>
 ){
-    println("Lista Autores")
-    imprimirAutores(listaAutores)
+    println("Lista Empresas")
+    imprimirEmpresas(listaEmpresas)
     imprimirExito(1)
 }
