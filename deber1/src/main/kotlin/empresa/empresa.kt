@@ -1,6 +1,7 @@
 import java.io.*
 import java.util.*
 import kotlin.collections.ArrayList
+
 fun cargarEmpresa(): ArrayList<Empresa> {
 
     val archivoEmpresas: File?
@@ -166,7 +167,7 @@ class Empresa(
                 "\tId:\t$idEmpresa\n" +
                 "\tNombre completo:  \t$nombreEmpresa\n" +
                 "\tGenero:  \t$paisEmpresa\n" +
-                "\tEdad:\t$anioEmpresa\n"
+                "\tAño:\t$anioEmpresa\n"
 
     }
 }
