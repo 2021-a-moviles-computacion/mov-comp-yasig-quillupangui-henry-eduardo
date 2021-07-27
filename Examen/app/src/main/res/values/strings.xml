@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="crear_button">Crear</string>
+    <string name="seleccione">Seleccione:</string>
+    <string name="empresa_select">Seleccione Empresa:</string>
+    <string name="sucursal_select">Seleccione Sucursal:</string>
+    <string name="empresa_registro">Registro Empresa</string>
+    <string name="sucursal_registro">Registro Sucursal</string>
+    <string name="registro_Nombre">Nombre:</string>
+    <string name="registro_Fundador">Ubicaciónn:</string>
+    <string name="registro_NumeroSucursales">Número de Sucursales:</string>
+    <string name="registro_Actividad">Activo:</string>
+    <string name="registro_Ubicacion">Ubicación:</string>
+    <string name="registro_FechaFundacion">Fecha Fundación:</string>
+    <string name="registro_AnioApertura">Año de apertura:</string>
+    <string name="registro_Empleados">Número de empleados:</string>
+    <string name="registro_Categoria">Categoria:</string>
+    <string name="registro_Valoracion">Aceptación:</string>
+    <string name="ingreso_Nombre">Ingrese Nombre</string>
+    <string name="registro_Edad">Edad:</string>
+    <string name="ingreso_Edad">Ingrese Edad</string>
+    <string name="empresa">EMPRESA</string>
+    <string name="sucursal">SUCURSAL</string>
+    <string name="iniciar_Sistema">Iniciar Sistema</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="guardar">Guardar</string>
+    <string name="ver_sucursal">Ver Sucursales</string>
+    <string name="actualizar_Empresa">Actualizar Empresa</string>
+    <string name="actualizar_Sucursal">Actualizar Sucursal</string>
+    <string-array name="categorias_dialogo">
+        <item>Hogar</item>
+        <item>Limpieza</item>
+        <item>Automotriz</item>
+        <item>Linea Blanca</item>
+        <item>Jugueteria</item>
+        <item>Libreria</item>
+    </string-array>
+</resources>

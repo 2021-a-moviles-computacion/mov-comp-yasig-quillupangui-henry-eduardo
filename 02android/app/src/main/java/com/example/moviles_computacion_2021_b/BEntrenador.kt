@@ -3,12 +3,7 @@ package com.example.moviles_computacion_2021_b
 import android.os.Parcel
 import android.os.Parcelable
 
-class BEntrenador(
-    val nombre: String?,
-    val descripcion: String?,
-    val liga: DLiga?,
-) :Parcelable {
-
+class BEntrenador (val nombre: String?, val descripcion: String?, val liga: DLiga?,) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
@@ -16,23 +11,28 @@ class BEntrenador(
     ) {
     }
 
-    override fun writeToParcel(parcel: Parcel?, flag: Int) {
-//        if(parcel != null){
-//            parcel.writeString(nombre)
-//            parcel.writeString(descripcion)
-//        }
+
+    override fun writeToParcel(parcel: Parcel?, flags: Int) {
+//       if(parcel!=null){
+//           parcel.writeString(nombre)
+//           parcel.writeString(descripcion)
+//       }
         parcel?.writeString(nombre)
         parcel?.writeString(descripcion)
-        parcel?.writeParcelable(liga, flag)
+
+        parcel?.writeParcelable(liga,flags)
+        //TODO("Not yet implemented")
     }
 
     override fun toString(): String {
-        return "${nombre} - ${descripcion}"
+        return "$nombre - $descripcion"
     }
 
     override fun describeContents(): Int {
         return 0
     }
+
+
 
     companion object CREATOR : Parcelable.Creator<BEntrenador> {
         override fun createFromParcel(parcel: Parcel): BEntrenador {

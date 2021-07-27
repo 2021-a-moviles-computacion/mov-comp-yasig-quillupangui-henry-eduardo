@@ -1,31 +1,14 @@
 package com.example.moviles_computacion_2021_b
 
 class BBaseDatosMemoria {
-    var papel:String = "Papelito"
+    //Variables estáticas
     companion object {
-
         val arregloBEntrenador = arrayListOf<BEntrenador>()
 
-        fun arreglarAlgoDelPapel(
-            bddMemoria:BBaseDatosMemoria,
-            nuevoPapel: String
-        ){
-            bddMemoria.papel = nuevoPapel
-        }
-
         init {
-            arregloBEntrenador
-                .add(
-                    BEntrenador("Adrian", "a@a.com")
-                )
-            arregloBEntrenador
-                .add(
-                    BEntrenador("Vicente", "b@b.com")
-                )
-            arregloBEntrenador
-                .add(
-                    BEntrenador("Vicente", "b@b.com")
-                )
+            // arregloBEntrenador.add(BEntrenador("David", "dav@com"))
+            //arregloBEntrenador.add(BEntrenador("Pedro", "ped@com"))
+            // arregloBEntrenador.add(BEntrenador("sofia", "sofia@com"))
         }
     }
 }

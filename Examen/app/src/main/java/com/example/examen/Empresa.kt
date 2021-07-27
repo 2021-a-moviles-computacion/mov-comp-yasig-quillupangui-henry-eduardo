@@ -1,6 +1,11 @@
 package com.example.examen
 
-class Matriz (var id: Int, var nombre: String, var ubicacion: String, var fundacion: String, var numSucursales: Int, var actividad: Int) {
+class Empresa (var id: Int,
+               var nombre: String,
+               var ubicacion: String,
+               var fundacion: String,
+               var numSucursales: Int,
+               var actividad: Int) {
 
     override fun toString(): String {
         return nombre

@@ -3,24 +3,19 @@ package com.example.moviles_computacion_2021_b
 import android.os.Parcel
 import android.os.Parcelable
 
-// add parcelable implementation
-class DLiga(
-    val nombre: String?,
-    val descripcion: String?
-): Parcelable {
+class DLiga(val nombre: String?,val descripcion: String?): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString()
     ) {
     }
 
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(nombre)
-        parcel.writeString(descripcion)
+    override fun describeContents(): Int {
+        TODO("Not yet implemented")
     }
 
-    override fun describeContents(): Int {
-        return 0
+    override fun writeToParcel(dest: Parcel?, flags: Int) {
+        TODO("Not yet implemented")
     }
 
     companion object CREATOR : Parcelable.Creator<DLiga> {

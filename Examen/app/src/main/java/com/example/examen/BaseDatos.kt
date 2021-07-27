@@ -1,6 +1,6 @@
 package com.example.examen
 
-class BaseD {
+class BaseDatos {
     companion object {
         var Tablas: SQLiteHelper? = null
     }

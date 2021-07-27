@@ -16,30 +16,20 @@ class CIntentExplicitoParametros : AppCompatActivity() {
         val edad = intent.getIntExtra("edad", 0)
         val entrenador = intent.getParcelableExtra<BEntrenador>("entrenador")
 
-        Log.i("intent-explicito", "${nombre}")
-        Log.i("intent-explicito", "${apellido}")
-        Log.i("intent-explicito", "${edad}")
-        Log.i("intent-explicito", "${entrenador}")
+        Log.i("intent_explicito", "$nombre")
+        Log.i("intent_explicito", "$apellido")
+        Log.i("intent_explicito", "$edad")
+        Log.i("intent_explicito", "$entrenador")
 
         val botonDevolverRespuesta = findViewById<Button>(R.id.btn_devolver_respuesta)
-
-        botonDevolverRespuesta
-            .setOnClickListener {
-                val intentDevolverParametros = Intent()
-                intentDevolverParametros.putExtra("nombreModificado", "Vicente")
-                intentDevolverParametros.putExtra("edadModificado", 33)
-                intentDevolverParametros.putExtra(
-                    "entrenadorModificado",
-                    BEntrenador("Vicente", "Sarzosa")
-                )
-//                this.setResult(
-                setResult(
-                    RESULT_OK,
-                    intentDevolverParametros
-                )
-                finish()
-//                this.finish()
-            }
+        botonDevolverRespuesta.setOnClickListener { val intentDevolverParametros = Intent()
+            intentDevolverParametros.putExtra("nombremodificado", "David")
+            intentDevolverParametros.putExtra("apellidomodificado", "Flores")
+            intentDevolverParametros.putExtra("edadmodificado", 50)
+            //intentDevolverParametros.putExtra("entrenadormodificado", BEntrenador("Pedro", "Perez"))
+            setResult(RESULT_OK,intentDevolverParametros)
+            finish() //this.finish()
+        }
 
 
     }

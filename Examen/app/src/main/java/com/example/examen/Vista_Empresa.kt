@@ -11,46 +11,46 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
-class Vista_Matriz : AppCompatActivity() {
+class Vista_Empresa : AppCompatActivity() {
     var posicionItemSeleccionado = 0
-    var nombreDirectorSeleccionado = ""
-    var idDirectorSeleccionado = 0
-    lateinit var directores :ArrayList<Director>
-    lateinit var adaptador: ArrayAdapter<Director>
-    lateinit var listDirectoresView: ListView
+    var nombreEmpresaSeleccionado = ""
+    var idEmpresaSeleccionado = 0
+    lateinit var empresas :ArrayList<Empresa>
+    lateinit var adaptador: ArrayAdapter<Empresa>
+    lateinit var listEmpresasView: ListView
 
     override fun onStart() {
         super.onStart()
         BaseDatos.Tablas = SQLiteHelper(this)
-        directores = BaseDatos.Tablas!!.consultarTodosDirectores()
-        adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, directores)
-        listDirectoresView = findViewById(R.id.listView_Director)
+        empresas = BaseDatos.Tablas!!.consultarTodaEmpresa()
+        adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, empresas)
+        listEmpresasView = findViewById(R.id.listView_Empresa)
         adaptador.notifyDataSetChanged()
-        listDirectoresView.adapter = adaptador
+        listEmpresasView.adapter = adaptador
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_director_view)
+        setContentView(R.layout.activity_vista_empresas)
         BaseDatos.Tablas = SQLiteHelper(this)
         onStart()
-        val botonCrearDirector = findViewById<Button>(R.id.btn_crear_Director)
-        val botonVerPelis = findViewById<Button>(R.id.btn_verPelis)
-        botonVerPelis.isEnabled = false //Desactivo botón hasta seleccionar
-        botonCrearDirector.setOnClickListener { abrirActividad(AnadirDirector::class.java) }
-        registerForContextMenu(listDirectoresView)
-        val infoDirector = findViewById<TextView>(R.id.txt_InfoDir)
+        val botonCrearEmpresa = findViewById<Button>(R.id.btn_crear_Empresa)
+        val botonVerSucursal = findViewById<Button>(R.id.btn_verSucursal)
+        botonVerSucursal.isEnabled = false //Desactivo botón hasta seleccionar
+        botonCrearEmpresa.setOnClickListener { abrirActividad(CrearEmpre::class.java) }
+        registerForContextMenu(listEmpresasView)
+        val infoEmpresa = findViewById<TextView>(R.id.txt_InfoEmpresa)
 
-        listDirectoresView.setOnItemClickListener { _, _, position, _ ->
-            botonVerPelis.isEnabled = true
-            val dirSelec = listDirectoresView.getItemAtPosition(position) as Director
-            infoDirector.text = dirSelec.imprimirDatosDirector()
-            botonVerPelis.setOnClickListener {
+        listEmpresasView.setOnItemClickListener { _, _, position, _ ->
+            botonVerSucursal.isEnabled = true
+            val dirSelec = listEmpresasView.getItemAtPosition(position) as Empresa
+            infoEmpresa.text = dirSelec.imprimirDatosEmpresa()
+            botonVerSucursal.setOnClickListener {
                 abrirActividadConParametros(
                     dirSelec.nombre,
                     dirSelec.id,
-                    Pelis_View::class.java
+                    Vista_Sucursal::class.java
                 )
             }
             return@setOnItemClickListener
@@ -78,22 +78,22 @@ class Vista_Matriz : AppCompatActivity() {
 
         BaseDatos.Tablas = SQLiteHelper(this)
         onStart()
-        val directorSeleccionado = listDirectoresView.getItemAtPosition(posicionItemSeleccionado) as Director
-        nombreDirectorSeleccionado = directorSeleccionado.nombre
-        idDirectorSeleccionado = directorSeleccionado.id
-        listDirectoresView.adapter = adaptador
+        val empresaSeleccionado = listEmpresasView.getItemAtPosition(posicionItemSeleccionado) as Empresa
+        nombreEmpresaSeleccionado = empresaSeleccionado.nombre
+        idEmpresaSeleccionado = empresaSeleccionado.id
+        listEmpresasView.adapter = adaptador
         val cancelarClick = { _: DialogInterface, _: Int ->
             Toast.makeText(this, android.R.string.cancel, Toast.LENGTH_SHORT).show()
         }
         val eliminarClick = { _: DialogInterface, _: Int ->
-            Log.i("bdd", "Nombre director: $nombreDirectorSeleccionado")
-            BaseDatos.Tablas!!.eliminarDirector(nombreDirectorSeleccionado)
+            Log.i("bdd", "Nombre empresa: $nombreEmpresaSeleccionado")
+            BaseDatos.Tablas!!.eliminarEmpresa(nombreEmpresaSeleccionado)
             onStart()
             Toast.makeText(this, "Eliminado", Toast.LENGTH_SHORT).show()
         }
         return when (item.itemId) {
             R.id.menu_editar -> {
-                abrirActividadConParametros(nombreDirectorSeleccionado, idDirectorSeleccionado, AnadirDirector::class.java)
+                abrirActividadConParametros(nombreEmpresaSeleccionado, idEmpresaSeleccionado, CrearEmpre::class.java)
                 return true
             }
             R.id.menu_eliminar -> {
@@ -121,10 +121,10 @@ class Vista_Matriz : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
-    private fun abrirActividadConParametros(director: String, idDirector: Int, clase: Class<*>) {
+    private fun abrirActividadConParametros(empresa: String, idEmpresa: Int, clase: Class<*>) {
         val intentExplicito = Intent(this, clase)
-        intentExplicito.putExtra("nombreDirector", director)
-        intentExplicito.putExtra("idDirector", idDirector)
+        intentExplicito.putExtra("nombreEmpresa", empresa)
+        intentExplicito.putExtra("idEmpresa", idEmpresa)
         startActivity(intentExplicito)
     }
 

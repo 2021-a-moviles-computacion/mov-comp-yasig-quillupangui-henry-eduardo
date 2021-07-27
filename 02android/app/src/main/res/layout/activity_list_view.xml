@@ -8,23 +8,21 @@
 
     <ListView
         android:id="@+id/ltv_ejemplo"
-        android:layout_width="276dp"
-        android:layout_height="217dp"
+        android:layout_width="207dp"
+        android:layout_height="168dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <Button
         android:id="@+id/btn_anadir_numero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Anadir numero"
+        android:layout_marginTop="60dp"
+        android:text="Añadir Número"
         app:layout_constraintEnd_toEndOf="@+id/ltv_ejemplo"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/ltv_ejemplo"
         app:layout_constraintTop_toBottomOf="@+id/ltv_ejemplo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
