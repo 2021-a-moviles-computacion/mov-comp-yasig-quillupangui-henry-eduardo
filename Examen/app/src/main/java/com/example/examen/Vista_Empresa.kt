@@ -37,7 +37,7 @@ class Vista_Empresa : AppCompatActivity() {
         onStart()
         val botonCrearEmpresa = findViewById<Button>(R.id.btn_crear_Empresa)
         val botonVerSucursal = findViewById<Button>(R.id.btn_verSucursal)
-        botonVerSucursal.isEnabled = false //Desactivo botón hasta seleccionar
+        botonVerSucursal.isEnabled = false
         botonCrearEmpresa.setOnClickListener { abrirActividad(CrearEmpre::class.java) }
         registerForContextMenu(listEmpresasView)
         val infoEmpresa = findViewById<TextView>(R.id.txt_InfoEmpresa)
@@ -68,7 +68,7 @@ class Vista_Empresa : AppCompatActivity() {
         super.onCreateContextMenu(menu, v, menuInfo)
         val inflater = menuInflater
         inflater.inflate(R.menu.menu, menu)
-        val info = menuInfo as AdapterView.AdapterContextMenuInfo //AS cast
+        val info = menuInfo as AdapterView.AdapterContextMenuInfo
         posicionItemSeleccionado = info.position
 
     }

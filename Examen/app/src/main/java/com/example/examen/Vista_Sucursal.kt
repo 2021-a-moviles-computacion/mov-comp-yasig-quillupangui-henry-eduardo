@@ -60,7 +60,7 @@ class Vista_Sucursal : AppCompatActivity() {
         super.onCreateContextMenu(menu, v, menuInfo)
         val inflater = menuInflater
         inflater.inflate(R.menu.menu, menu)
-        val info = menuInfo as AdapterView.AdapterContextMenuInfo //AS cast
+        val info = menuInfo as AdapterView.AdapterContextMenuInfo 
         posicionItemSeleccionado = info.position
 
     }

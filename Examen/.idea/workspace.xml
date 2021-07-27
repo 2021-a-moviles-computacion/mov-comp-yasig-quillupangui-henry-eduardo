@@ -32,95 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766b8ee7-2d5a-4fc5-87ad-a42cca2bb3d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/androidTest/java/com/example/moviles_computacion_2021_b/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/ACicloVida.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/BBaseDatos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/BBaseDatosMemoria.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/BEntrenador.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/BListView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/CIntentExplicitoParametros.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/ControlBase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/DLiga.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/ESqliteHelperUsuario.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/EUsuarioBDD.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/java/com/example/moviles_computacion_2021_b/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/layout/activity_aciclo_vida.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/layout/activity_control_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/layout/activity_list_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/values-en-port/string.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/values-es-land/string.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/values-land/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/main/res/values-port/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02android/app/src/test/java/com/example/moviles_computacion_2021_b/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/BaseDatos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/CrearEmpre.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/CrearSucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/SQLiteHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_empresa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_sucursal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_empresas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_sucursales.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/androidTest/java/com/example/moviles_computacion_2021/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/moviles_computacion_2021/A1CiclodeVida.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/moviles_computacion_2021/BBaseDatosMemoria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/moviles_computacion_2021/BEntrenador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/java/com/example/moviles_computacion_2021/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_a1_ciclode_vida.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values-en-land/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values-es-port/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/app/src/test/java/com/example/moviles_computacion_2021/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Empresa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Sucursal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
