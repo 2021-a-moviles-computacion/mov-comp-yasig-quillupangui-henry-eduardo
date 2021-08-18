@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorHome(private val actividad: Home, private val listaItemsWelcome: List<*>, private val recyclerView: RecyclerView) :
+class AdaptadorHome(private val actividad: HomePrincipal, private val listaItemsWelcome: List<*>, private val recyclerView: RecyclerView) :
     RecyclerView.Adapter<AdaptadorHome.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -25,7 +25,7 @@ class AdaptadorHome(private val actividad: Home, private val listaItemsWelcome: 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorHome.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_welcome, //Definimos la vista del recycler view
+            R.layout.item_welcome,
             parent, false
         )
         return MyViewHolder(itemView)

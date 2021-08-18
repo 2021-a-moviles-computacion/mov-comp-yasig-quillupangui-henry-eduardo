@@ -26,12 +26,10 @@ var recyclerEscuchadoRecientemente : RecyclerView? = null
 var recyclerListaExitos : RecyclerView? = null
 /**
  * A simple [Fragment] subclass.
- * Use the [Home.newInstance] factory method to
+ * Use the [HomePrincipal.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Home : Fragment() {
-
-
+class HomePrincipal : Fragment() {
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -39,11 +37,11 @@ class Home : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Home.
+         * @return A new instance of fragment HomePrincipal.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic fun newInstance(param1: String, param2: String) =
-            Home().apply {
+            HomePrincipal().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
@@ -87,6 +85,8 @@ class Home : Fragment() {
         listaItemsWelcome.add(Canciones("hola","IMAGEN"))
         listaItemsWelcome.add(Canciones("hola","IMAGEN"))
         listaItemsWelcome.add(Canciones("hola","IMAGEN"))
+        listaItemsWelcome.add(Canciones("DD","IMG"))
+        listaItemsWelcome.add(Canciones("DD","IMG"))
 
         iniciarRecyclerViewWelcome(listaItemsWelcome,this, recyclerInicio!!,AdaptadorInicio(this,listaItemsWelcome, recyclerInicio!!))
         iniciarRecyclerView(listaItemsWelcome,this, recyclerPlaylistAmaras!!,AdaptadorHome(this,listaItemsWelcome,recyclerPlaylistAmaras!!))
@@ -97,7 +97,7 @@ class Home : Fragment() {
         iniciarRecyclerView(listaItemsWelcome,this, recyclerListaExitos!!,AdaptadorFavoritos(this,listaItemsWelcome,recyclerListaExitos!!))
     }
 
-    fun iniciarRecyclerViewWelcome(lista: List<*>, actividad: Home, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
+    fun iniciarRecyclerViewWelcome(lista: List<*>, actividad: HomePrincipal, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
         recyclerView.adapter = adaptador
         recyclerView.itemAnimator= androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = GridLayoutManager(context, 2)
@@ -105,7 +105,7 @@ class Home : Fragment() {
         adaptador.notifyDataSetChanged()
     }
 
-    fun iniciarRecyclerView( lista: List<*>,actividad: Home, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
+    fun iniciarRecyclerView(lista: List<*>, actividad: HomePrincipal, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
         recyclerView.adapter = adaptador
         recyclerView.itemAnimator= androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = LinearLayoutManager(actividad.context, LinearLayoutManager.HORIZONTAL, false)

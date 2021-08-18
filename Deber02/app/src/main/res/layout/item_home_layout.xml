@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -16,11 +17,30 @@
             android:background="@color/white1"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/img_item_home"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:background="@drawable/redondo" />
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/redondo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FAF8F8"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image2"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:src="@drawable/genero1"
+                app:civ_border_color="#FAF8F8"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image3"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:src="@drawable/ecuador"
+                app:civ_border_color="#FAF8F8"
+                app:civ_border_width="2dp" />
 
             <TextView
                 android:id="@+id/txt_itemCard_home"

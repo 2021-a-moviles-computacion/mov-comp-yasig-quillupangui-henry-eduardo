@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="187dp"
+        android:layout_height="562dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
         android:background="@color/white1"
@@ -20,12 +20,13 @@
             android:background="@drawable/regueton"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/btn_item_buscar2"
-            android:layout_width="184dp"
-            android:layout_height="94dp"
-            android:background="@drawable/madona"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image3"
+            android:layout_width="174dp"
+            android:layout_height="96dp"
+            android:src="@drawable/madona"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="2dp" />
 
         <ImageButton
             android:id="@+id/btn_item_buscar3"
@@ -34,12 +35,13 @@
             android:background="@drawable/ecuador"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/btn_item_buscar4"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image4"
             android:layout_width="180dp"
-            android:layout_height="90dp"
-            android:background="@drawable/mix"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_height="96dp"
+            android:src="@drawable/mix"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="2dp" />
 
         <ImageButton
             android:id="@+id/btn_item_buscar5"
@@ -48,12 +50,13 @@
             android:background="@drawable/cancion2"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/btn_item_buscar6"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image5"
             android:layout_width="184dp"
-            android:layout_height="94dp"
-            android:background="@drawable/sinbandera"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_height="96dp"
+            android:src="@drawable/sinbandera"
+            app:civ_border_color="#FAF8F8"
+            app:civ_border_width="2dp" />
     </LinearLayout>
 
 

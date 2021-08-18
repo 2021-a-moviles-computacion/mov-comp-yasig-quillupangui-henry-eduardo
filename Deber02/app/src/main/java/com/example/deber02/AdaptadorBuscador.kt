@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorBuscador (private val actividad: Search, private val listaItemsSearch: List<*>, private val recyclerView: RecyclerView) :
+class AdaptadorBuscador (private val actividad: Buscador, private val listaItemsSearch: List<*>, private val recyclerView: RecyclerView) :
     RecyclerView.Adapter<AdaptadorBuscador.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {

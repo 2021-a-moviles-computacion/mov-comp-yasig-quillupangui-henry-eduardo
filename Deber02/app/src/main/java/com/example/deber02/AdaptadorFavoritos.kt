@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorFavoritos (private val actividad: Home, private val listaItemsRecently: List<*>, private val recyclerView: RecyclerView) :
+class AdaptadorFavoritos (private val actividad: HomePrincipal, private val listaItemsRecently: List<*>, private val recyclerView: RecyclerView) :
     RecyclerView.Adapter<AdaptadorFavoritos.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -25,7 +25,7 @@ class AdaptadorFavoritos (private val actividad: Home, private val listaItemsRec
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorFavoritos.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_recently_played, //Definimos la vista del recycler view
+            R.layout.item_recently_played,
             parent, false
         )
         return MyViewHolder(itemView)

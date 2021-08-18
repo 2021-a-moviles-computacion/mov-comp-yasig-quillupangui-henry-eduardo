@@ -17,11 +17,11 @@
             android:name=".BottomNavigationMenu"
             android:exported="true" />
         <activity
-            android:name=".Home"
+            android:name=".HomePrincipal"
             android:exported="true"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".DetallesHome"
+            android:name=".InicioDetall"
             android:exported="true"
             tools:ignore="Instantiatable" />
         <activity android:name=".Inicio">

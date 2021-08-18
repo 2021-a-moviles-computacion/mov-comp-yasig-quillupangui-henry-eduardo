@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorLibreria (private val actividad: Library, private val listaItemsLibrary: List<*>, private val recyclerView: RecyclerView) :
+class AdaptadorLibreria (private val actividad: Bliblioteca, private val listaItemsLibrary: List<*>, private val recyclerView: RecyclerView) :
     RecyclerView.Adapter<AdaptadorLibreria.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -18,7 +18,7 @@ class AdaptadorLibreria (private val actividad: Library, private val listaItemsL
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorLibreria.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.artist_item, //Definimos la vista del recycler view
+            R.layout.artist_item,
             parent, false
         )
         return MyViewHolder(itemView)

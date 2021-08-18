@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 var recyclerPlaylist : RecyclerView? = null
 /**
  * A simple [Fragment] subclass.
- * Use the [DetallesHome.newInstance] factory method to
+ * Use the [InicioDetall.newInstance] factory method to
  * create an instance of this fragment.
  */
-class DetallesHome : Fragment() {
+class InicioDetall : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -44,7 +44,11 @@ class DetallesHome : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listaItemsPlaylist = arrayListOf<Canciones>()
-        listaItemsPlaylist.add(Canciones("Te va doler","IMG"))
+        listaItemsPlaylist.add(Canciones("hhh","IMG"))
+        listaItemsPlaylist.add(Canciones("hhh","IMG"))
+        listaItemsPlaylist.add(Canciones("hhh","IMG"))
+        listaItemsPlaylist.add(Canciones("hhh","IMG"))
+        listaItemsPlaylist.add(Canciones("hhh","IMG"))
         listaItemsPlaylist.add(Canciones("hhh","IMG"))
         listaItemsPlaylist.add(Canciones("hhh","IMG"))
         listaItemsPlaylist.add(Canciones("hhh","IMG"))
@@ -54,7 +58,7 @@ class DetallesHome : Fragment() {
         iniciarRecyclerView(listaItemsPlaylist,this, recyclerPlaylist!!,AdaptadorListaCanciones(this,listaItemsPlaylist, recyclerPlaylist!!))
     }
 
-    fun iniciarRecyclerView( lista: List<*>,actividad:DetallesHome, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
+    fun iniciarRecyclerView(lista: List<*>, actividad:InicioDetall, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
         recyclerView.adapter = adaptador
         recyclerView.itemAnimator= androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = LinearLayoutManager(actividad.context, LinearLayoutManager.VERTICAL, false)
@@ -68,12 +72,12 @@ class DetallesHome : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment DetallesHome.
+         * @return A new instance of fragment InicioDetall.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            DetallesHome().apply {
+            InicioDetall().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

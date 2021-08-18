@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class AdaptadorInicio (private val actividad: Home, private val listaItemsHome: List<*>, private val recyclerView: RecyclerView) :
+class AdaptadorInicio (private val actividad: HomePrincipal, private val listaItemsHome: List<*>, private val recyclerView: RecyclerView) :
     RecyclerView.Adapter<AdaptadorInicio.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -24,7 +24,7 @@ class AdaptadorInicio (private val actividad: Home, private val listaItemsHome: 
             btnItem = view.findViewById(R.id.cardview_item_menu_inicio)
 
             btnItem.setOnClickListener {
-                val cambioFragment = DetallesHome()
+                val cambioFragment = InicioDetall()
                 actividad.activity?.supportFragmentManager?.beginTransaction()?.apply {
                     replace(R.id.frame_container,cambioFragment).commit()
                 }

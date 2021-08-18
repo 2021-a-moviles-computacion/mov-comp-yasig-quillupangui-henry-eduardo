@@ -6,20 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-var recyclerTopGenres : RecyclerView? = null
-var recyclerBrowseAll : RecyclerView? = null
+var recyclerExitos : RecyclerView? = null
+var recyclerInicioHome : RecyclerView? = null
 /**
  * A simple [Fragment] subclass.
- * Use the [Search.newInstance] factory method to
+ * Use the [Buscador.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Search : Fragment() {
+class Buscador : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,8 +38,8 @@ class Search : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val fragmentSearch = inflater.inflate(R.layout.fragment_search, container, false)
-        recyclerTopGenres = fragmentSearch.findViewById(R.id.recien_escuchadas_recycler)
-        recyclerBrowseAll = fragmentSearch.findViewById(R.id.playlist_amaras_recycler)
+        recyclerExitos = fragmentSearch.findViewById(R.id.recien_escuchadas_recycler)
+        recyclerInicioHome = fragmentSearch.findViewById(R.id.playlist_amaras_recycler)
         // Inflate the layout for this fragment
         return fragmentSearch
 
@@ -47,25 +48,29 @@ class Search : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listaItemsTopGenres = arrayListOf<Canciones>()
-        listaItemsTopGenres.add(Canciones("hola","IMAGEN"))
-        listaItemsTopGenres.add(Canciones("hola","IMAGEN"))
-        listaItemsTopGenres.add(Canciones("hola","IMAGEN"))
-        listaItemsTopGenres.add(Canciones("hola","IMAGEN"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+        listaItemsTopGenres.add(Canciones("DD","IMG"))
+
 
         val listaItemsBrowseAll = arrayListOf<Canciones>()
-        for (i in 1..20) {
+        for (i in 1..40) {
             listaItemsBrowseAll.add(Canciones("hola","IMAGEN"))
         }
 
-        iniciarRecyclerViewWelcome(listaItemsTopGenres,this, recyclerTopGenres!!,AdaptadorBuscador(this,listaItemsTopGenres, recyclerTopGenres!!))
-        iniciarRecyclerViewWelcome(listaItemsBrowseAll,this, recyclerBrowseAll!!,AdaptadorBuscador(this,listaItemsBrowseAll, recyclerBrowseAll!!))
+        iniciarRecyclerViewWelcome(listaItemsTopGenres,this, recyclerExitos!!,AdaptadorBuscador(this,listaItemsTopGenres, recyclerExitos!!))
+        iniciarRecyclerViewWelcome(listaItemsBrowseAll,this, recyclerInicioHome!!,AdaptadorBuscador(this,listaItemsBrowseAll, recyclerInicioHome!!))
     }
 
-    fun iniciarRecyclerViewWelcome(lista: List<*>, actividad: Search, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
+    fun iniciarRecyclerViewWelcome(lista: List<*>, actividad: Buscador, recyclerView: RecyclerView, adaptador:RecyclerView.Adapter<*>){
         recyclerView.adapter = adaptador
         recyclerView.itemAnimator= androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = GridLayoutManager(context, 2)
-        // recyclerView.layoutManager = LinearLayoutManager(actividad.context, LinearLayoutManager.HORIZONTAL, false)
         adaptador.notifyDataSetChanged()
     }
 
@@ -76,12 +81,12 @@ class Search : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Search.
+         * @return A new instance of fragment Buscador.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Search().apply {
+            Buscador().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
