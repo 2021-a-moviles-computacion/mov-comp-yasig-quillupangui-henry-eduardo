@@ -5,24 +5,24 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/white1"
     tools:context=".Search">
 
+
     <TextView
-        android:id="@+id/txt_your_library"
+        android:id="@+id/txt_busqueda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/search"
+        android:layout_marginTop="28dp"
+        android:text="@string/busqueda"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:id="@+id/top_genres_layout"
+                android:id="@+id/recien_escuchadas_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -48,15 +48,15 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/txt_top_genres"
+                    android:id="@+id/txt_lista_exitos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/top_genres"
-                    android:textColor="@color/white"
+                    android:text="@string/ListaExitos"
+                    android:textColor="@color/black1"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/top_genres_recycler"
+                    android:id="@+id/recien_escuchadas_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" />
@@ -72,18 +72,18 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top_genres_layout">
+                app:layout_constraintTop_toBottomOf="@+id/recien_escuchadas_layout">
 
                 <TextView
-                    android:id="@+id/txt_browse_all"
+                    android:id="@+id/txt_playlist_amaras"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/browse_all"
-                    android:textColor="@color/white"
+                    android:text="@string/playlist"
+                    android:textColor="@color/black1"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/browse_all_recycler"
+                    android:id="@+id/playlist_amaras_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" />
@@ -97,12 +97,37 @@
         android:id="@+id/imageButton2"
         android:layout_width="360dp"
         android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/search_bar"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buscador"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_your_library"
+        app:layout_constraintTop_toBottomOf="@+id/txt_busqueda"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/ic_popup_reminder"
+        android:backgroundTint="@color/black1"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

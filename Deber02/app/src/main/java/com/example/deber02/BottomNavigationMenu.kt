@@ -1,5 +1,4 @@
-package com.example.spotify_v1
-
+package com.example.deber02
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +14,8 @@ class BottomNavigationMenu : AppCompatActivity() {
         val firstFragment = Home()
         val secondFragment = Search()
         val thirdFragment = Library()
+        val fourthFragment = DetallesHome()
+
         establecerFragmento(firstFragment)
         if (navegacion != null) {
             navegacion.setOnItemSelectedListener() {
@@ -22,6 +23,8 @@ class BottomNavigationMenu : AppCompatActivity() {
                     R.id.fragment_home -> establecerFragmento(firstFragment)
                     R.id.fragment_search -> establecerFragmento(secondFragment)
                     R.id.fragment_library -> establecerFragmento(thirdFragment)
+                    R.id.fragment_musica -> establecerFragmento(fourthFragment)
+
                 }
                 true
             }

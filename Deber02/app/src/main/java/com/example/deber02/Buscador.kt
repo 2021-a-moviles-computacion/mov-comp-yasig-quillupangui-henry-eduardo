@@ -44,7 +44,6 @@ class Search : Fragment() {
 
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listaItemsTopGenres = arrayListOf<Canciones>()
@@ -58,7 +57,6 @@ class Search : Fragment() {
             listaItemsBrowseAll.add(Canciones("hola","IMAGEN"))
         }
 
-        //DEBO CREAR UNA LISTA PARA CADA RECYCLER
         iniciarRecyclerViewWelcome(listaItemsTopGenres,this, recyclerTopGenres!!,AdaptadorBuscador(this,listaItemsTopGenres, recyclerTopGenres!!))
         iniciarRecyclerViewWelcome(listaItemsBrowseAll,this, recyclerBrowseAll!!,AdaptadorBuscador(this,listaItemsBrowseAll, recyclerBrowseAll!!))
     }

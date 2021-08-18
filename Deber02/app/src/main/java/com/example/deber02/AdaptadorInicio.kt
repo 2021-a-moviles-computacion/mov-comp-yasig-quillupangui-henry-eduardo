@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
-class AdaptadorNormalHome (private val actividad: Home, private val listaItemsHome: List<*>, private val recyclerView: RecyclerView) :
-    RecyclerView.Adapter<AdaptadorNormalHome.MyViewHolder>() {
+class AdaptadorInicio (private val actividad: Home, private val listaItemsHome: List<*>, private val recyclerView: RecyclerView) :
+    RecyclerView.Adapter<AdaptadorInicio.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombreItem: TextView
@@ -32,8 +32,7 @@ class AdaptadorNormalHome (private val actividad: Home, private val listaItemsHo
         }
     }
 
-    //Setear layout a utilizar
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorNormalHome.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorInicio.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.item_home_layout, //Definimos la vista del recycler view
             parent, false
@@ -41,12 +40,8 @@ class AdaptadorNormalHome (private val actividad: Home, private val listaItemsHo
         return MyViewHolder(itemView)
     }
 
-    //SETEAMOS CADA ITEM
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val entrenador = listaItemsHome[position]
-        //holder.nombreItem.text = "Item $position"
-        //SETEAR IMAGEN DE CADA WEA
-        // holder.imagenItem
     }
 
     override fun getItemCount(): Int {

@@ -8,8 +8,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorPlaylist (private val actividad: DetallesHome, private val listaItemsPlaylist: List<*>, private val recyclerView: RecyclerView) :
-    RecyclerView.Adapter<AdaptadorPlaylist.MyViewHolder>() {
+class AdaptadorListaCanciones (private val actividad: DetallesHome, private val listaItemsPlaylist: List<*>, private val recyclerView: RecyclerView) :
+    RecyclerView.Adapter<AdaptadorListaCanciones.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombreCancionItem: TextView
@@ -22,18 +22,11 @@ class AdaptadorPlaylist (private val actividad: DetallesHome, private val listaI
             artistaCancionItem = view.findViewById(R.id.txt_artistaCancionPlaylist)
             imagenCancionItem = view.findViewById(R.id.img_cancionPlaylist)
             btnItem = view.findViewById(R.id.layout_cancionPlaylist)
-
-//            btnItem.setOnClickListener {
-//                val cambioFragment = DetallesHome()
-//                actividad.activity?.supportFragmentManager?.beginTransaction()?.apply {
-//                    replace(R.id.frame_container,cambioFragment).commit()
-//                }
-//            }
         }
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorPlaylist.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorListaCanciones.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.item_playlist, //Definimos la vista del recycler view
             parent, false
@@ -41,11 +34,8 @@ class AdaptadorPlaylist (private val actividad: DetallesHome, private val listaI
         return MyViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: AdaptadorPlaylist.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AdaptadorListaCanciones.MyViewHolder, position: Int) {
         val cancionPlaylist = listaItemsPlaylist[position]
-        //holder.nombreItem.text = "Item $position"
-        //SETEAR IMAGEN DE CADA WEA
-        // holder.imagenItem
     }
 
     override fun getItemCount(): Int {

@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorWelcome(private val actividad: Home, private val listaItemsWelcome: List<*>, private val recyclerView: RecyclerView) :
-    RecyclerView.Adapter<AdaptadorWelcome.MyViewHolder>() {
+class AdaptadorHome(private val actividad: Home, private val listaItemsWelcome: List<*>, private val recyclerView: RecyclerView) :
+    RecyclerView.Adapter<AdaptadorHome.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombreItem: TextView
@@ -23,8 +23,7 @@ class AdaptadorWelcome(private val actividad: Home, private val listaItemsWelcom
         }
     }
 
-    //Setear layout a utilizar
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorWelcome.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorHome.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.item_welcome, //Definimos la vista del recycler view
             parent, false
@@ -32,12 +31,9 @@ class AdaptadorWelcome(private val actividad: Home, private val listaItemsWelcom
         return MyViewHolder(itemView)
     }
 
-    //SETEAMOS CADA ITEM
-    override fun onBindViewHolder(holder: AdaptadorWelcome.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AdaptadorHome.MyViewHolder, position: Int) {
         val entrenador = listaItemsWelcome[position]
         holder.nombreItem.text = "Item $position"
-        //SETEAR IMAGEN DE CADA WEA
-       // holder.imagenItem
     }
 
     override fun getItemCount(): Int {

@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorRecentlyHome (private val actividad: Home, private val listaItemsRecently: List<*>, private val recyclerView: RecyclerView) :
-    RecyclerView.Adapter<AdaptadorRecentlyHome.MyViewHolder>() {
+class AdaptadorFavoritos (private val actividad: Home, private val listaItemsRecently: List<*>, private val recyclerView: RecyclerView) :
+    RecyclerView.Adapter<AdaptadorFavoritos.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombreItem: TextView
@@ -23,8 +23,7 @@ class AdaptadorRecentlyHome (private val actividad: Home, private val listaItems
         }
     }
 
-    //Setear layout a utilizar
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorRecentlyHome.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorFavoritos.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.item_recently_played, //Definimos la vista del recycler view
             parent, false
@@ -32,12 +31,9 @@ class AdaptadorRecentlyHome (private val actividad: Home, private val listaItems
         return MyViewHolder(itemView)
     }
 
-    //SETEAMOS CADA ITEM
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val entrenador = listaItemsRecently[position]
-        //holder.nombreItem.text = "Item $position"
-        //SETEAR IMAGEN DE CADA WEA
-        // holder.imagenItem
+
     }
 
     override fun getItemCount(): Int {

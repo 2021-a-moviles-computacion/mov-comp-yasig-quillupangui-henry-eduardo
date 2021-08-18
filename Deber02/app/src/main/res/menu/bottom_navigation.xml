@@ -2,14 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/fragment_home"
-        android:icon="@drawable/ic__homefine"
+        android:icon="@drawable/ic_home"
         android:title=""/>
     <item
         android:id="@+id/fragment_search"
-        android:icon="@drawable/ic_finesearch"
+        android:icon="@drawable/ic_microphone_black"
+        android:title=""/>
+    <item
+        android:id="@+id/fragment_musica"
+        android:icon="@drawable/ic__heart2"
         android:title=""/>
     <item
         android:id="@+id/fragment_library"
+        android:icon="@drawable/ic_search"
+        android:title=""/>
+    <item
+        android:id="@+id/fragment_premium"
         android:icon="@drawable/ic_library"
         android:title=""/>
 </menu>

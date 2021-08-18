@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white1"
     tools:context=".Home">
 
     <ScrollView
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:id="@+id/welcome_layout"
+                android:id="@+id/home_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -33,21 +33,21 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/txt_saludo"
+                        android:id="@+id/txt_Musica"
                         android:layout_width="252dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="@string/saludo"
-                        android:textColor="@color/white"
+                        android:text="@string/inicio"
+                        android:textColor="@color/black1"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <ImageButton
-                        android:id="@+id/btn_recently"
+                        android:id="@+id/btn_microfono_inicio"
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/ic_backtime"
+                        android:background="@drawable/ic_microphone_black"
                         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <Space
@@ -56,11 +56,12 @@
                         android:layout_weight="0.5" />
 
                     <ImageButton
-                        android:id="@+id/btn_recibidos"
+                        android:id="@+id/btn_buscar_inicio"
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/ic__inbox2"
+                        android:background="@drawable/ic_finesearch"
+                        android:backgroundTint="@color/black1"
                         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <Space
@@ -74,6 +75,7 @@
                         android:layout_height="22dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/ic__settings2"
+                        android:backgroundTint="@color/black1"
                         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <Space
@@ -83,34 +85,34 @@
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/welcome_recycler"
+                    android:id="@+id/home_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/jump_back_layout"
+                android:id="@+id/playlist_que_amaras_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="30dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcome_layout">
+                app:layout_constraintTop_toBottomOf="@+id/home_layout">
 
                 <TextView
-                    android:id="@+id/txt_jump_back"
+                    android:id="@+id/txt_playlist_que_amaras"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/jump_back"
-                    android:textColor="@color/white"
+                    android:text="@string/playlist"
+                    android:textColor="@color/black1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/jump_back_recycler"
+                    android:id="@+id/playlist_que_amaras_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" />
@@ -118,7 +120,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/top_genres_layout"
+                android:id="@+id/recien_escuchadas_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -126,20 +128,20 @@
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/jump_back_layout">
+                app:layout_constraintTop_toBottomOf="@+id/playlist_que_amaras_layout">
 
                 <TextView
-                    android:id="@+id/txt_recently_played"
+                    android:id="@+id/txt_recien_escuchadas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="@string/recently_played"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/top_genres_recycler"
+                    android:id="@+id/recien_escuchadas_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" />
@@ -147,7 +149,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/made_for_u_layout"
+                android:id="@+id/categorias_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -155,105 +157,102 @@
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top_genres_layout">
+                app:layout_constraintTop_toBottomOf="@+id/recien_escuchadas_layout">
 
                 <TextView
-                    android:id="@+id/txt_made_for_u"
+                    android:id="@+id/txt_categorias"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/made_for"
-                    android:textColor="@color/white"
+                    android:text="@string/categorias"
+                    android:textColor="@color/black1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/made_for_u_recycler"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp" />
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:id="@+id/top_mixes_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="30dp"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/made_for_u_layout">
-
-                <TextView
-                    android:id="@+id/txt_top_mixes"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="@string/your_top_mixes"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/top_mixes_recycler"
+                    android:id="@+id/categorias_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/uniquely_layout"
+                android:id="@+id/generos_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="30dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top_mixes_layout">
+                app:layout_constraintTop_toBottomOf="@+id/categorias_layout">
 
                 <TextView
-                    android:id="@+id/txt_uniquely"
+                    android:id="@+id/txt_generos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/uniquely_yours"
-                    android:textColor="@color/white"
+                    android:text="@string/generos"
+                    android:textColor="@color/black1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/uniquely_recycler"
+                    android:id="@+id/generos_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/more_u_like_layout"
+                android:id="@+id/escuchado_recientemente_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="30dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/uniquely_layout">
-
+                app:layout_constraintTop_toBottomOf="@+id/generos_layout">
 
                 <TextView
-                    android:id="@+id/txt_more_u_like"
+                    android:id="@+id/txt_escuchado_recientemente"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@string/More_you_like"
-                    android:textColor="@color/white"
+                    android:text="@string/favoritos"
+                    android:textColor="@color/black1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/more_u_like_recycler"
+                    android:id="@+id/ecuchado_recientemente_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lista_exitos_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/escuchado_recientemente_layout">
+
+
+                <TextView
+                    android:id="@+id/txt_lista_de_exitos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/ListaExitos"
+                    android:textColor="@color/black1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lista_exitos_recycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp" />
@@ -266,7 +265,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/more_u_like_layout" />
+                app:layout_constraintTop_toBottomOf="@+id/lista_exitos_layout" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

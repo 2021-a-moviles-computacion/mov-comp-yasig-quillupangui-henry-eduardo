@@ -33,8 +33,6 @@
   <component name="ChangeListManager">
     <list default="true" id="766b8ee7-2d5a-4fc5-87ad-a42cca2bb3d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Empresa.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/examen/Vista_Sucursal.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
     <property name="android-custom-viewC:/Users/henry/AppData/Local/Android/Sdk/sources/android-30/android/widget/RatingBar.java_SELECTED" value="RatingBar" />
     <property name="android-custom-viewC:/Users/henry/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
     <property name="com.android.tools.idea.sqlite.queryhistory" value="SELECT * FROM EMPRESA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads/mov-com-vivas-corrales-gabriel-alexander-main/Spotify_v1" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -250,6 +248,10 @@
     </state>
     <state x="1806" y="114" width="840" height="410" key="AndroidCreateResourceFileDialog/0.0.1366.728/1366.0.1280.680@1366.0.1280.680" timestamp="1627232140204" />
     <state x="526" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1627230945769" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1629077533464">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1629077533464" />
     <state width="1323" height="350" key="GridCell.Tab.0.bottom" timestamp="1627345622914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name1">Deber02</string>
+    <string name="Bienvenido">Bienvenido(a)</string>
+    <string name="Bienvenido1">Registrate gratis o inicia sesión</string>
+    <string name="log_in1">Google</string>
+    <string name="crear_cuenta">Facebook</string>
+    <string name="o">o</string>
+    <string name="crear_correo">Direccion de correo electrónico</string>
+    <string name="busqueda">Búsqueda</string>
+    <string name="reproducir">REPRODUCIR</string>
+    <string name="recomendaciones">Recomendaciones</string>
+    <string name="generos">Géneros</string>
+    <string name="favoritos">Escuchado Recientemente</string>
+    <string name="inicio">Música</string>
+    <string name="playlist">Playlist que amarás</string>
+    <string name="categorias">Categorías</string>
+    <string name="playlistPopu">Playlist populares</string>
+    <string name="ListaExitos">Lista de éxitos</string>
+    <string name="soloen">Solo en Deezer</string>
+    <string name="recently_played">Recien Escuchadas</string>
+    <string name="app_name">DEEZER</string>
+    <string name="search">Search</string>
+       <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

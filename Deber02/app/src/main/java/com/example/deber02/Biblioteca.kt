@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 var recyclerLibrary: RecyclerView? = null
@@ -51,7 +50,6 @@ class Library : Fragment() {
         for (i in 1..20) {
             listaItemsLibrary.add(Canciones("hola","IMAGEN"))
         }
-        //DEBO CREAR UNA LISTA PARA CADA RECYCLER
         iniciarRecyclerView(listaItemsLibrary,this, recyclerLibrary!!,AdaptadorLibreria(this,listaItemsLibrary, recyclerLibrary!!))
 
     }

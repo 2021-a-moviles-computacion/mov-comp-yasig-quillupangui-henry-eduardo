@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/white1"
     tools:context=".DetallesHome">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,11 +12,11 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/img_Principal_Home_Item"
+            android:id="@+id/img_reproductor_Item"
             android:layout_width="232dp"
             android:layout_height="197dp"
             android:layout_marginTop="60dp"
-            android:src="@drawable/jump_back_in"
+            android:src="@drawable/sinbandera"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -24,50 +24,41 @@
 
 
         <TextView
-            android:id="@+id/txt_Principal_Home_Item"
+            android:id="@+id/txt_titulo_tema_reproductor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Daily Mix 5"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            android:text="SIN BANDERA"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="88dp"
-            android:background="@drawable/ic_play_button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_Principal_Home_Item"
-            tools:ignore="SpeakableTextPresentCheck" />
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_playlist"
-            android:layout_width="395dp"
-            android:layout_height="419dp"
-            android:layout_marginTop="30dp"
+            android:id="@+id/recycler_caciones_reproductor"
+            android:layout_width="439dp"
+            android:layout_height="385dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_login2"
+            app:layout_constraintVertical_bias="0.255" />
 
         <ImageButton
-            android:id="@+id/btn_dots_playlist"
+            android:id="@+id/btn_ajustes_reproductor"
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_marginStart="44dp"
             android:background="@drawable/ic__962b4b9495c7d5510d4b9f9e2e866fb"
-            app:layout_constraintBottom_toBottomOf="@+id/img_Principal_Home_Item"
-            app:layout_constraintStart_toEndOf="@+id/img_Principal_Home_Item"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/img_reproductor_Item"
+            app:layout_constraintStart_toEndOf="@+id/img_reproductor_Item"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.121"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -78,9 +69,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="320dp"
             android:background="@drawable/ic__back"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_dots_playlist"
-            app:layout_constraintEnd_toStartOf="@+id/btn_dots_playlist"
-            app:layout_constraintTop_toTopOf="@+id/btn_dots_playlist"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_ajustes_reproductor"
+            app:layout_constraintEnd_toStartOf="@+id/btn_ajustes_reproductor"
+            app:layout_constraintTop_toTopOf="@+id/btn_ajustes_reproductor"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -89,46 +81,79 @@
             android:layout_width="219dp"
             android:layout_height="14dp"
             android:layout_marginTop="8dp"
-            android:text="José José, Javier Solís, Juan Gabriel and more"
-            android:textColor="@color/menos_white"
-            android:textSize="10dp"
+            android:text="Sin Bandera"
+            android:textAlignment="center"
+            android:textColor="@color/black1"
+            android:textSize="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_Principal_Home_Item" />
+            app:layout_constraintTop_toBottomOf="@+id/img_reproductor_Item" />
+
+        <TextView
+            android:id="@+id/txt_DescripciónPlaylist2"
+            android:layout_width="78dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="12dp"
+            android:text="Contenido"
+            android:textAlignment="center"
+            android:textColor="@color/black1"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
 
         <TextView
             android:id="@+id/txt_madePlaylist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Made for Elver"
-            android:textColor="@color/menos_white"
+            android:text="Mientes Mix"
+            android:textColor="@color/black1"
             android:textSize="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_DescripciónPlaylist" />
 
-        <TextView
-            android:id="@+id/txt_DuracionPlaylist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2h50min"
-            android:textColor="@color/menos_white"
-            android:textSize="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_madePlaylist" />
-
         <ImageButton
             android:id="@+id/btn_likePlaylist"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/ic__heart2"
-            app:layout_constraintEnd_toEndOf="@+id/txt_DuracionPlaylist"
-            app:layout_constraintStart_toStartOf="@+id/txt_DuracionPlaylist"
-            app:layout_constraintTop_toBottomOf="@+id/txt_DuracionPlaylist"
+            android:backgroundTint="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_DescripciónPlaylist2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_compartir_playlist"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_login2"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/reproducir"
+            android:textColor="@color/white1"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_likePlaylist"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toEndOf="@+id/btn_compartir_playlist"
+            app:layout_constraintTop_toTopOf="@+id/txt_madePlaylist"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <ImageButton
+            android:id="@+id/btn_compartir_playlist"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/ic_share"
+            android:backgroundTint="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_likePlaylist"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorSearch (private val actividad: Search, private val listaItemsSearch: List<*>, private val recyclerView: RecyclerView) :
-    RecyclerView.Adapter<AdaptadorSearch.MyViewHolder>() {
+class AdaptadorBuscador (private val actividad: Search, private val listaItemsSearch: List<*>, private val recyclerView: RecyclerView) :
+    RecyclerView.Adapter<AdaptadorBuscador.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val btnItem: ImageButton
@@ -17,19 +17,17 @@ class AdaptadorSearch (private val actividad: Search, private val listaItemsSear
         }
     }
 
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorSearch.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdaptadorBuscador.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_search, //Definimos la vista del recycler view
+            R.layout.item_search,
             parent, false
         )
         return MyViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: AdaptadorSearch.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AdaptadorBuscador.MyViewHolder, position: Int) {
         val album = listaItemsSearch[position]
-        //SETEAR IMAGEN DE CADA WEA
-        // holder.imagenItem
+
     }
 
     override fun getItemCount(): Int {

@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 var recyclerPlaylist : RecyclerView? = null
@@ -42,7 +41,6 @@ class DetallesHome : Fragment() {
         return fragmentHomeDetalles
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listaItemsPlaylist = arrayListOf<Canciones>()
@@ -53,8 +51,6 @@ class DetallesHome : Fragment() {
         listaItemsPlaylist.add(Canciones("hhh","IMG"))
 
 
-
-        //DEBO CREAR UNA LISTA PARA CADA RECYCLER
         iniciarRecyclerView(listaItemsPlaylist,this, recyclerPlaylist!!,AdaptadorListaCanciones(this,listaItemsPlaylist, recyclerPlaylist!!))
     }
 

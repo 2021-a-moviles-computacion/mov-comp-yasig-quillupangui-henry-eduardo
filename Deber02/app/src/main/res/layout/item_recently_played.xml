@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview_item_recently"
+        android:id="@+id/cardview_item_recientes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp">
@@ -20,15 +20,29 @@
                 android:id="@+id/img_item_recently"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/colors_spotify" />
+                android:background="@drawable/recien" />
+            <TextView
+                android:id="@+id/txt_itemCard_recently1"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:text="Lo mas escuchado"
+                android:textColor="@color/white1"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/img_item_recently1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/batalla" />
 
             <TextView
                 android:id="@+id/txt_itemCard_recently"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:gravity="center_vertical"
-                android:text="COLORS - ALL SHOWS"
-                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Batalla CDMX"
+                android:textColor="@color/white1"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
