@@ -27,13 +27,12 @@ class CProducto : AppCompatActivity() {
         )
         val db = Firebase.firestore
         val referencia = db.collection("producto")
-        referencia
-            .add(nuevoProducto)
-            .addOnSuccessListener {
+
+        referencia.add(nuevoProducto).addOnSuccessListener {
                 editTextNombre.text.clear()
                 editTextPrecio.text.clear()
             }
-            .addOnFailureListener { }
+           // .addOnFailureListener { }
 
 
     }

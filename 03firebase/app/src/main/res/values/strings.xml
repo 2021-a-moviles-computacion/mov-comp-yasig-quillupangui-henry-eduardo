@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">03-firebase</string>
+    <string name="encabezadoLista">PRODUCTO -- PRECIO UNITARIO -- CANTIDAD -- TOTAL</string>
 </resources>

@@ -10,9 +10,10 @@
         android:id="@+id/btn_crear_restaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:text="Crear Restaurante"
         app:layout_constraintEnd_toEndOf="@+id/et_nombre_restaurante"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_nombre_restaurante"
         app:layout_constraintTop_toBottomOf="@+id/et_nombre_restaurante" />
 
@@ -20,13 +21,12 @@
         android:id="@+id/et_nombre_restaurante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Ingrese nombre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

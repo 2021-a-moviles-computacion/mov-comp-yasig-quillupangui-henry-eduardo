@@ -12,9 +12,8 @@ class DRestaurante : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drestaurante)
 
-        val botonCrear = findViewById<Button>(R.id.btn_crear_restaurante)
-        botonCrear
-            .setOnClickListener {
+        val crearRestaurante = findViewById<Button>(R.id.btn_crear_restaurante)
+        crearRestaurante.setOnClickListener {
                 crearRestaurante()
             }
     }
@@ -30,7 +29,7 @@ class DRestaurante : AppCompatActivity() {
             .addOnSuccessListener {
                 editTextNombre.text.clear()
             }
-            .addOnFailureListener { }
+          //  .addOnFailureListener { }
     }
 
 }

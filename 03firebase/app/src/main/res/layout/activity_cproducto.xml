@@ -10,26 +10,24 @@
         android:id="@+id/et_nombre_producto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:ems="10"
-        android:hint="Ingrese nombre"
+        android:hint="Ingrese Nombre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_precio_producto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Ingrese precio"
+        android:hint="Ingrese Precio"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@+id/et_nombre_producto"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_nombre_producto"
         app:layout_constraintTop_toBottomOf="@+id/et_nombre_producto" />
 
@@ -37,9 +35,10 @@
         android:id="@+id/btn_crear_producto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="Crear"
+        android:layout_marginTop="72dp"
+        android:text="CREAR"
         app:layout_constraintEnd_toEndOf="@+id/et_precio_producto"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/et_precio_producto"
         app:layout_constraintTop_toBottomOf="@+id/et_precio_producto" />
 </androidx.constraintlayout.widget.ConstraintLayout>

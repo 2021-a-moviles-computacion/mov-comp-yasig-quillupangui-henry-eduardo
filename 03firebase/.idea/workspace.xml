@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="AutoImportSettings">
@@ -32,32 +32,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a0fe484-c322-459b-945c-61160b6992c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BAuthUsuario.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BUsuarioFirebase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/CProducto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/DRestaurante.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/EOrdenes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/FirestoreUsuarioDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cproducto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_drestaurante.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_eordenes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../04-firebase/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Orden.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Producto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Restaurante.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BUsuarioFirebase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BUsuarioFirebase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/CProducto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/CProducto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/DRestaurante.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/DRestaurante.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/EOrdenes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/EOrdenes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cproducto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cproducto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_drestaurante.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_drestaurante.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_eordenes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_eordenes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@55P4C20A29001970]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\henry\.android\avd\Pixel_4_API_24.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -85,6 +81,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads/mov-comp-hidalgo-carrillo-brigitte-valeria-desarrollo/Firebase_uno" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -178,6 +175,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -199,22 +197,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1630457969906" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1630462971090">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1631670071349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1630462971090" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1630462971090">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1631670071349" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1630898382205" />
+    <state width="1323" height="137" key="GridCell.Tab.0.bottom" timestamp="1630942320043">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1630462971090" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1630462971090">
+    <state width="1323" height="137" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1630942320043" />
+    <state width="1323" height="137" key="GridCell.Tab.0.center" timestamp="1630942320042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1630462971090" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1630462971090">
+    <state width="1323" height="137" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1630942320042" />
+    <state width="1323" height="137" key="GridCell.Tab.0.left" timestamp="1630942320041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1630462971090" />
+    <state width="1323" height="137" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1630942320041" />
+    <state width="1323" height="137" key="GridCell.Tab.0.right" timestamp="1630942320042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="137" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1630942320042" />
     <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1630461058503">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
