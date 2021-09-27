@@ -32,14 +32,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766b8ee7-2d5a-4fc5-87ad-a42cca2bb3d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/CrearEmpre.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/CrearSucursal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Empresa.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/MapsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Sucursal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Ubicacion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Vista_Empresa.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Vista_Sucursal.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_crear_empresa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_crear_sucursal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_ubicacion.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_vista_empresas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_vista_sucursales.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/fragment_maps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03firebase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03firebase/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\henry\.android\avd\Pixel_4_API_24.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@55P4C20A29001970]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -49,11 +84,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Script" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -73,7 +108,7 @@
     <property name="android-custom-viewC:/Users/henry/AppData/Local/Android/Sdk/sources/android-30/android/widget/RatingBar.java_SELECTED" value="RatingBar" />
     <property name="android-custom-viewC:/Users/henry/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
     <property name="com.android.tools.idea.sqlite.queryhistory" value="SELECT * FROM EMPRESA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads/mov-com-vivas-corrales-gabriel-alexander-main/Spotify_v1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -243,15 +278,19 @@
     </state>
     <state x="1736" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1280.680@1366.0.1280.680" timestamp="1627231926484" />
     <state x="395" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1627259716453" />
-    <state x="1806" y="114" width="840" height="410" key="AndroidCreateResourceFileDialog" timestamp="1627232140204">
-      <screen x="1366" y="0" width="1280" height="680" />
-    </state>
-    <state x="1806" y="114" width="840" height="410" key="AndroidCreateResourceFileDialog/0.0.1366.728/1366.0.1280.680@1366.0.1280.680" timestamp="1627232140204" />
-    <state x="526" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1627230945769" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1629077533464">
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1632255456802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1629077533464" />
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1632255456802" />
+    <state x="526" y="122" width="840" height="410" key="AndroidCreateResourceFileDialog" timestamp="1632255375976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="1806" y="114" width="840" height="410" key="AndroidCreateResourceFileDialog/0.0.1366.728/1366.0.1280.680@1366.0.1280.680" timestamp="1627232140204" />
+    <state x="526" y="122" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1632255375976" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1632255251522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632255251522" />
     <state width="1323" height="350" key="GridCell.Tab.0.bottom" timestamp="1627345622914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

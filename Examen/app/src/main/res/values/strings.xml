@@ -7,7 +7,7 @@
     <string name="empresa_registro">Registro Empresa</string>
     <string name="sucursal_registro">Registro Sucursal</string>
     <string name="registro_Nombre">Nombre:</string>
-    <string name="registro_Fundador">Ubicaciónn:</string>
+    <string name="registro_Fundador">Provincia:</string>
     <string name="registro_NumeroSucursales">Número de Sucursales:</string>
     <string name="registro_Actividad">Activo:</string>
     <string name="registro_Ubicacion">Ubicación:</string>
