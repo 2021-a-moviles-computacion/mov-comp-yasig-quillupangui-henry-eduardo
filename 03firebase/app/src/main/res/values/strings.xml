@@ -3,11 +3,11 @@
 <string name="crear_button">Crear</string>
 <string name="seleccione">Seleccione:</string>
 <string name="empresa_select">Seleccione Empresa:</string>
-<string name="sucursal_select">:</string>
+<string name="sucursal_select">Elija:</string>
 <string name="empresa_registro">Registro Empresa</string>
 <string name="sucursal_registro">Registro Sucursal</string>
 <string name="registro_Nombre">Nombre:</string>
-<string name="registro_Fundador">Provincia:</string>
+<string name="registro_Fundador">Nombre Sucursal:</string>
 <string name="registro_NumeroSucursales">Número de Sucursales:</string>
 <string name="registro_Actividad">Activo:</string>
 <string name="registro_Ubicacion">Ubicación:</string>
@@ -15,10 +15,8 @@
 <string name="registro_AnioApertura">Año de apertura:</string>
 <string name="registro_Empleados">Número de empleados:</string>
 <string name="registro_Categoria">Categoria:</string>
-<string name="registro_Valoracion">Aceptación:</string>
+<string name="registro_Valoracion">Calificación:</string>
 <string name="ingreso_Nombre">Ingrese Nombre</string>
-<string name="registro_Edad">Edad:</string>
-<string name="ingreso_Edad">Ingrese Edad</string>
 <string name="empresa">EMPRESA</string>
 <string name="sucursal">SUCURSAL</string>
 <string name="iniciar_Sistema">Iniciar Sistema</string>
@@ -28,7 +26,9 @@
 <string name="ver_sucursal">Ver Sucursales</string>
 <string name="actualizar_Empresa">Actualizar Empresa</string>
 <string name="actualizar_Sucursal">Actualizar Sucursal</string>
-    <string name="ubicacion">Ubicacion</string>
+
+    <string name="Pais">Pais</string>
+    <string name="ubicacion">Ciudad:</string>
     <string name="ver_ubicacion">Ubicación</string>
     <string-array name="categorias_dialogo">
     <item>Hogar</item>

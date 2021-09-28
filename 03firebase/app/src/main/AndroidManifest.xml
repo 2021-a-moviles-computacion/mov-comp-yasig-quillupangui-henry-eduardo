@@ -16,9 +16,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.03firebase">
-        <activity
-            android:name=".Ubicacion"
-            android:exported="true" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -32,14 +29,21 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".CrearSucursal"
+        <activity
+            android:name=".Ubicacion"
             android:exported="true" />
-        <activity android:name=".Vista_Sucursal"
+        <activity
+            android:name=".CrearSucursal"
             android:exported="true" />
-        <activity android:name=".CrearEmpre"
+        <activity
+            android:name=".Vista_Sucursal"
             android:exported="true" />
-        <activity android:name=".Vista_Empresa"
-            android:exported="true" >
+        <activity
+            android:name=".CrearEmpre"
+            android:exported="true" />
+        <activity
+            android:name=".Vista_Empresa"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

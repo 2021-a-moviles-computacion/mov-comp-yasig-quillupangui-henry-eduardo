@@ -18,8 +18,8 @@ class Ubicacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ubicacion)
-        val tituloSucursal = intent.getStringExtra("nombreSucu").toString()
-        val txtTituloSucu = findViewById<TextView>(R.id.txt_titulo_pelicula)
+        val tituloSucursal = intent.getStringExtra("nombre").toString()
+        val txtTituloSucu = findViewById<TextView>(R.id.txt_titulo_sucursal)
         txtTituloSucu.text=tituloSucursal
         val latitud = intent.getDoubleExtra("latitud",0.0)
         val longitud = intent.getDoubleExtra("longitud",0.0)
@@ -64,9 +64,9 @@ class Ubicacion : AppCompatActivity() {
         val tienePermisos = permisosFineLocation == PackageManager.PERMISSION_GRANTED
         if (!tienePermisos) {
             ActivityCompat.requestPermissions(
-                this, arrayOf(
+                this, arrayOf(//Arreglo Permisos
                     android.Manifest.permission.ACCESS_FINE_LOCATION
-                ), 1
+                ), 1 //cODIGO DE PETICION DE LOS PERMISOS
             )
         }
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/suave1"
     tools:context=".Ubicacion">
 
     <fragment
@@ -20,12 +21,12 @@
         tools:context=".MapsFragment" />
 
     <TextView
-        android:id="@+id/txt_titulo_pelicula"
+        android:id="@+id/txt_titulo_sucursal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="TITULO PELICULA"
+        android:text="Ubicación"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

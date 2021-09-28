@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49feb0ad-5377-4337-ad97-0958dc611b51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/debug/res/values/google_maps_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/CrearEmpre.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/CrearEmpre.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/CrearSucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/CrearSucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Empresa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/MapsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/MapsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Sucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Ubicacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Ubicacion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Vista_Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Vista_Empresa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Vista_Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/java/com/example/a03_firebase/dto/Vista_Sucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_crear_empresa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_crear_empresa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_crear_sucursal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_crear_sucursal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_ubicacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_ubicacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_vista_empresas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_vista_empresas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_vista_sucursales.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/activity_vista_sucursales.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/fragment_maps2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/layout/fragment_maps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03firebase/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03firebase/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ykMc90cFqTGQ7s4VMHrGvUGzqw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49feb0ad-5377-4337-ad97-0958dc611b51" name="Default Changelist" comment="" />
+      <created>1632791211234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632791211234</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1632791473299">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632791473299" />
+  </component>
+</project>

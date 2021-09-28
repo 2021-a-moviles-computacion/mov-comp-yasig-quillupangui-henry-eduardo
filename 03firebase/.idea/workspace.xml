@@ -32,74 +32,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a0fe484-c322-459b-945c-61160b6992c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearEmpre.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearSucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/MapsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Ubicacion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maps2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen/app/src/main/res/layout/f.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/CrearEmpre.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/CrearSucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/MapsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Ubicacion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Vista_Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/java/com/example/examen2bimestre/Vista_Sucursal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_crear_empresa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_crear_sucursal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_ubicacion.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_vista_empresas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/activity_vista_sucursales.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/layout/fragment_maps.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Examen2Bimestre/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/gradient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber02/app/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BAuthUsuario.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/BUsuarioFirebase.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/CProducto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/DRestaurante.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/EOrdenes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/FirestoreUsuarioDto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Orden.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Producto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Restaurante.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cproducto.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_drestaurante.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_eordenes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearEmpre.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearEmpre.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearSucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/CrearSucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Empresa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/MapsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/MapsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Sucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Ubicacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Ubicacion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Empresa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Sucursal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a03_firebase/dto/Vista_Sucursal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_empresa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_empresa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_sucursal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_sucursal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ubicacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ubicacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_empresas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_empresas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_sucursales.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_vista_sucursales.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maps2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maps.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Examen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Examen/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examen/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Deber02/app/src/main/res/drawable/gradient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deber02/app/src/main/res/drawable/gradient.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +94,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/values" />
+    <property name="android-custom-viewC:/Users/henry/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -144,7 +105,11 @@
     <key name="android.template.810530770">
       <recent name="com.example.a03_firebase.dto" />
     </key>
+    <key name="android.template.-2134069155">
+      <recent name="com.example.a03_firebase" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\henry\Documents\Aplicaciones Moviles\mov-comp-yasig-quillupangui-henry-eduardo\03firebase\app\src\main\res\drawable-v24" />
       <recent name="D:\Users\henry\Documents\Aplicaciones Moviles\mov-comp-yasig-quillupangui-henry-eduardo\03firebase\app\src\main\res\values" />
       <recent name="D:\Users\henry\Documents\Aplicaciones Moviles\mov-comp-yasig-quillupangui-henry-eduardo\03firebase\app\src\main\res" />
       <recent name="D:\Users\henry\Documents\Aplicaciones Moviles\mov-comp-yasig-quillupangui-henry-eduardo\03firebase\app\src\main\java\com\example\a03_firebase\dto" />
@@ -248,10 +213,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="400" y="113" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1630455281005" />
-    <state x="754" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632283187094">
+    <state x="754" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632756212097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="754" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1632283187094" />
+    <state x="754" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1632756212097" />
     <state x="526" y="101" key="AndroidCreateResourceDirectoryDialog" timestamp="1630457214904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,42 +229,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1630457969906" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1632252186533">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1632791198765">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1631670071349" />
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632252186533" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1632284897580">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632791198765" />
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1632793488924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1632284897580" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1632284897578">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1632793488924" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1632793488924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1632284897578" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1632284897577">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1632793488924" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1632793488924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1632284897577" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1632284897579">
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1632793488924" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1632793488924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1632284897579" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1630461058503">
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1632793488924" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1632793120931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1630461058503" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1630461058503">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1632793120931" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1632793120931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1630461058503" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1630461058503">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1632793120931" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1632793120931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1630461058503" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1630461058503">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1632793120931" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1632793120931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1630461058503" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1632793120931" />
+    <state x="400" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1632770497749">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="400" y="135" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1632770497749" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1632783601037">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1632783601037" />
   </component>
 </project>

@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/suave1"
     android:layout_height="match_parent"
     tools:context=".CrearEmpre">
 
 
     <Button
-        android:id="@+id/btn_guardarEmpresa"
+        android:id="@+id/btn_guardarEmpre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
@@ -16,6 +17,63 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Nombre"
+        style="@style/textViews"
+        android:text="@string/registro_Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registroEmpresa_Tit" />
+
+    <TextView
+        android:id="@+id/txt_registroEmpresa_Tit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empresa_registro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/txt_Nacionalida"
+        style="@style/textViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/Pais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoNombre" />
+
+    <EditText
+        android:id="@+id/txt_ingresoNombre"
+        style="@style/textInserts"
+        android:layout_width="232dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Nombre" />
+
+    <EditText
+        android:id="@+id/txt_ingresoUbicacion"
+        style="@style/textInserts"
+        android:layout_width="231dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Nacionalida" />
 
     <TextView
         android:id="@+id/txt_fecha"
@@ -28,6 +86,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ingresoUbicacion" />
+
+    <TextView
+        android:id="@+id/txt_ingresoDate"
+        style="@style/textViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="MM/DD/YYYY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fecha" />
 
     <DatePicker
         android:id="@+id/datePicker1"
@@ -56,7 +125,7 @@
         app:layout_constraintTop_toTopOf="@+id/datePicker1" />
 
     <TextView
-        android:id="@+id/txt_Numero_Sucursales"
+        android:id="@+id/txt_NuemroSucursales"
         style="@style/textViews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,83 +135,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_fecha" />
 
+
     <EditText
         android:id="@+id/txt_ingresoNumSucursales"
         style="@style/textInserts"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Numero_Sucursales" />
-
-    <TextView
-        android:id="@+id/txt_ingresoDate"
-        style="@style/textViews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="MM/DD/YYYY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_fecha" />
-
-    <EditText
-        android:id="@+id/txt_ingresoUbicacion"
-        style="@style/textInserts"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Ubicacion" />
-
-    <TextView
-        android:id="@+id/txt_Ubicacion"
-        style="@style/textViews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/registro_Ubicacion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoNombre" />
-
-    <EditText
-        android:id="@+id/txt_ingresoNombre"
-        style="@style/textInserts"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Nombre" />
-
-    <TextView
-        android:id="@+id/txt_Nombre"
-        style="@style/textViews"
-        android:text="@string/registro_Nombre"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_registroEmpresa_Tit" />
-
-    <TextView
-        android:id="@+id/txt_registroEmpresa_Tit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/empresa_registro"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_NuemroSucursales" />
 
     <CheckBox
-        android:id="@+id/check_actividad"
+        android:id="@+id/check_activo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -152,6 +160,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ingresoNumSucursales" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

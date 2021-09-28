@@ -13,22 +13,20 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-
 class Vista_Empresa : AppCompatActivity() {
     var posicionItemSeleccionado = 0
-    var nombreEmpresaSeleccionado = ""
-    var idEmpresaSeleccionado = ""
-    lateinit var empresas :ArrayList<Empresa>
+    var nombreEmpresaSeleccionada = ""
+    var idEmpresaSeleccionada = ""
+    lateinit var empresas: ArrayList<Empresa>
     lateinit var adaptador: ArrayAdapter<Empresa>
     lateinit var listEmpresasView: ListView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vista_empresas)
         listEmpresasView = findViewById(R.id.listView_Empresa)
-
+        //-------------------------------------------------------
         val arregloEmpresas = mutableListOf<Empresa>()
         val db = Firebase.firestore
         val referencia = db.collection("empresa")
@@ -44,16 +42,15 @@ class Vista_Empresa : AppCompatActivity() {
         }
         empresas = arregloEmpresas as ArrayList<Empresa>
         adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, empresas)
-
-
+        //-------------------------------------------------
 
         listEmpresasView.adapter = adaptador
         val botonCrearEmpresa = findViewById<Button>(R.id.btn_crear_Empresa)
         val botonVerSucursal = findViewById<Button>(R.id.btn_verSucursal)
-        botonVerSucursal.isEnabled = false
+        botonVerSucursal.isEnabled = false //Desactivo botón hasta seleccionar
         botonCrearEmpresa.setOnClickListener { abrirActividad(CrearEmpre::class.java) }
         registerForContextMenu(listEmpresasView)
-        val infoEmpresa = findViewById<TextView>(R.id.txt_InfoEmpresa)
+        val infoEmpresa = findViewById<TextView>(R.id.txt_InfoEmpre)
         adaptador.notifyDataSetChanged()
         listEmpresasView.setOnItemClickListener { _, _, position, _ ->
             botonVerSucursal.isEnabled = true
@@ -68,8 +65,6 @@ class Vista_Empresa : AppCompatActivity() {
             }
             return@setOnItemClickListener
         }
-
-
     }
 
 
@@ -88,31 +83,30 @@ class Vista_Empresa : AppCompatActivity() {
 
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-
         adaptador.notifyDataSetChanged()
         val db = Firebase.firestore
         val referencia = db.collection("empresa")
         val empresaSeleccionado = listEmpresasView.getItemAtPosition(posicionItemSeleccionado) as Empresa
-        nombreEmpresaSeleccionado = empresaSeleccionado.nombre!!
-        idEmpresaSeleccionado = empresaSeleccionado.id!!
+        nombreEmpresaSeleccionada = empresaSeleccionado.nombre!!
+        idEmpresaSeleccionada = empresaSeleccionado.id!!
         listEmpresasView.adapter = adaptador
         val cancelarClick = { _: DialogInterface, _: Int ->
             Toast.makeText(this, android.R.string.cancel, Toast.LENGTH_SHORT).show()
         }
         val eliminarClick = { _: DialogInterface, _: Int ->
-            Log.i("FIREBASE", "Nombre empresa: $nombreEmpresaSeleccionado")
-            referencia.document(idEmpresaSeleccionado)
+            Log.i("FIREBASE", "Nombre empresa: $nombreEmpresaSeleccionada")
+            //AQUI DEBO ELIMINAR
+            referencia.document(idEmpresaSeleccionada)
                 .delete()
                 .addOnSuccessListener { Log.i("firebase", "DocumentSnapshot successfully deleted!") }
                 .addOnFailureListener { e -> Log.i("firebase", "Error deleting document", e) }
             empresas.remove(empresaSeleccionado)
             adaptador.notifyDataSetChanged()
             Toast.makeText(this, "Eliminado", Toast.LENGTH_SHORT).show()
-
         }
         return when (item.itemId) {
             R.id.menu_editar -> {
-                abrirActividadConParametros(nombreEmpresaSeleccionado, idEmpresaSeleccionado, CrearEmpre::class.java)
+                abrirActividadConParametros(nombreEmpresaSeleccionada, idEmpresaSeleccionada, CrearEmpre::class.java)
                 return true
             }
             R.id.menu_eliminar -> {
@@ -135,7 +129,8 @@ class Vista_Empresa : AppCompatActivity() {
         }
     }
 
-    fun abrirActividad(clase: Class<*>) {
+
+    private fun abrirActividad(clase: Class<*>) {
         val intentExplicito = Intent(this, clase)
         startActivity(intentExplicito)
     }
@@ -146,6 +141,5 @@ class Vista_Empresa : AppCompatActivity() {
         intentExplicito.putExtra("idEmpresa", idEmpresa)
         startActivity(intentExplicito)
     }
-
 
 }

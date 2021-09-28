@@ -5,7 +5,7 @@ class Empresa (var id: String?=null,
                var ubicacion: String?=null,
                var fundacion: String?=null,
                var numSucursales: Int?=null,
-               var actividad: Int?=null) {
+               var activo: Int?=null) {
 
     override fun toString(): String {
         return nombre!!
@@ -13,13 +13,13 @@ class Empresa (var id: String?=null,
 
     fun imprimirDatosEmpresa(): String {
         var activo = "no"
-        if (actividad == 1) activo = "si"
+        if (this.activo == 1) activo = "si"
         return """
                 Nombre: $nombre 
                 Ubicacion: $ubicacion
                 Fecha de Fundacion: $fundacion
                 Numero de Sucursales: $numSucursales
-                Actividad: $activo
+                Status: $activo
             """.trimIndent()
     }
 

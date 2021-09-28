@@ -21,13 +21,24 @@ class CrearSucursal : AppCompatActivity() {
         val nombreEmpresa = intent.getStringExtra("nombreEmpresa")
         val idEmpresa = intent.getStringExtra("idEmpresa")
         val idSucursal = intent.getStringExtra("idSucursal")
-
-        val ciudadades = arrayOf("Amsterdam", "Berlin", "Bogotá", "London", "Madrid", "México DC", "New York",
-            "Paris", "Quito", "Rio de Janeiro", "Tokyo", "Vienna", "Zürich")
-        val latitudes = arrayOf(52.35573356081986, 52.5192880232342, 4.708507195958197, 51.509162838374365, 40.41800636913152, 19.432671298400965,
-            40.73378562762449, 48.85901815928653, -0.21922483476220822,-22.938658330236088,35.68614253218143,48.217399805696736,47.36894099516527)
-        val longitudes = arrayOf(4.881766688070693, 13.409614318972272, -74.05425716885155, -0.12767985390655445, -3.7077094446139935, -99.12723505493796,
-            -73.99320893340935,2.296522110492033, -78.51152304364815, -43.228146943991, 139.78434424093086, 16.399427792363813, 8.550536094895179)
+        //**************************************************************************************************
+        //**************************************************************************************************
+        //**************************************************************************************************
+        val ciudadades = arrayOf("Cuenca", "Guaranda", "Azogues", "Tulcan", "Riobamba", "Latacunga", "Machala",
+            "Esmeraldas", "Galapagos", "Guayaquil", "Ibarra", "Loja", "Babahoyo","Portoviejo","Macas","Tena",
+        "Francisco de Orellana","Puyo","Quito","Santa Elena","Santo Domingo","Nueva Loja","Ambato","Zamora")
+        val latitudes = arrayOf(-2.9005500,-1.5926300,-2.7396900,0.8118700,-1.6709800,-0.9352100,-3.2586100,0.9592000,
+            0.3500000,-2.2058400, 0.3517100,-3.9931300,-1.8021700,-1.0545800,-2.3086800,
+            -0.9938000,-0.933333,-1.4836900,-0.2298500,-2.2262200,-0.2530500,
+            -0.083333,-1.2490800,41.5063300)
+        val longitudes = arrayOf(-79.0045300,-79.0009800,-78.8486000,-77.7172700,
+            -78.6471200,-78.6155400,-79.9605300,-79.6539700,-78.7333300,
+            -79.9079500,-78.1223300,-79.2042200,-79.5344300,-80.4544500,
+            -78.1113500,-77.8128600,-75.666667,-78.0025700,-78.5249500,
+            -80.8587300, -79.1753600,-76.883333,-78.6167500,-5.7445600)
+        //**************************************************************************************************
+        //**************************************************************************************************
+        //**************************************************************************************************
         val adapterCiudad: ArrayAdapter<String> = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ciudadades)
         val spinnerCiudades = findViewById<Spinner>(R.id.spinner_ubicacion)
         adapterCiudad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -46,64 +57,67 @@ class CrearSucursal : AppCompatActivity() {
                 Log.i("ciudades", "Item no seleccionado")
             }
         }
+        //***************************************************************************************************
+
 
         val txtEmpresa = findViewById<TextView>(R.id.txt_nombreEmpresa)
         txtEmpresa.text = nombreEmpresa
-        val txtnombreSucursal = findViewById<TextView>(R.id.txt_nombreSucursal)
+        val txttituloSucursal = findViewById<TextView>(R.id.txt_tituloSucursal)
         val txtAnioApertura = findViewById<TextView>(R.id.txt_ingresoAnio)
-        val txtNumeroEmpleados = findViewById<TextView>(R.id.txt_empleados)
+        val txtNumeroEmpleados = findViewById<TextView>(R.id.txt_numEmpleados)
         val txtCategoria = findViewById<TextView>(R.id.txt_selectCategoria)
         val valoracion = findViewById<RatingBar>(R.id.ratingBar)
         val guardar = findViewById<Button>(R.id.btn_guardarSucursal)
-        val selectCategorias = ArrayList<Int>()
-        val categoriaSeleccionada = BooleanArray(6) { false }
+        val selectCategoria = ArrayList<Int>()
+        val categoriasSeleccionadas = BooleanArray(6) { false }
         txtCategoria.setOnClickListener {
             val opciones = resources.getStringArray(R.array.categorias_dialogo)
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Categorias")
-            builder.setCancelable(false)
+            builder.setCancelable(false)//NO se puede cancelar
             builder.setMultiChoiceItems(
-                opciones, categoriaSeleccionada
+                opciones, categoriasSeleccionadas
             ) { _, which, isChecked ->
                 if (isChecked) {
-                    selectCategorias.add(which)
-                    selectCategorias.sort()
+                    selectCategoria.add(which)
+                    selectCategoria.sort()
                 } else {
-                    selectCategorias.remove(which)
+                    selectCategoria.remove(which)
                 }
                 Log.i("firestore", "$which $isChecked")
             }
             builder.setPositiveButton("OK") { _, _ ->
-                var categorias = ""
-                selectCategorias.forEach { i -> categorias = categorias + opciones[i] + "/" }
-                if (categorias == "") {
+                var categoria = ""
+                selectCategoria.forEach { i -> categoria = categoria + opciones[i] + "/" }
+                if (categoria == "") {
                     txtCategoria.text = getString(R.string.seleccione)
                 } else {
-                    txtCategoria.text = categorias
+                    txtCategoria.text = categoria
                 }
             }
             builder.show()
         }
 
-        val nombreSucursal = intent.getStringExtra("nombreSucursal")
 
-        if (nombreSucursal != null && nombreSucursal != "") {
+        val tituloSucursal = intent.getStringExtra("nombreSucursal")
 
-            val nombreActualizarEmpresa = findViewById<TextView>(R.id.txt_registroSucursal)
-            nombreActualizarEmpresa.text = getString(R.string.actualizar_Sucursal)
+        if (tituloSucursal != null && tituloSucursal != "") {
+
+            val tituloActualizarEmpresa = findViewById<TextView>(R.id.txt_registroSucursal)
+            tituloActualizarEmpresa.text = getString(R.string.actualizar_Sucursal)
 
             val db = Firebase.firestore
             val referencia = db.collection("sucursal").document(idSucursal!!)
             referencia.get()
                 .addOnSuccessListener { document ->
-                    if (document !=null){
+                    if (document != null) {
                         val sucursalParaEditar = document.toObject(Sucursal::class.java)
-                        txtnombreSucursal.text = sucursalParaEditar?.nombreSucu
+                        txttituloSucursal.text = sucursalParaEditar?.nombreSucu
                         txtAnioApertura.text = sucursalParaEditar?.anioApertura.toString()
                         txtNumeroEmpleados.text = sucursalParaEditar?.numeroEmpleados.toString()
                         valoracion.rating = sucursalParaEditar?.valoracion!!
                         txtCategoria.text = sucursalParaEditar?.categoria
-                    }else{
+                    } else {
                         Log.d("firebase", "No such document")
                     }
                 }
@@ -111,19 +125,19 @@ class CrearSucursal : AppCompatActivity() {
                     Log.d("firebase", "get failed with ", exception)
                 }
 
-
             guardar.setOnClickListener {
-                val nombreActualizado = txtnombreSucursal.text.toString()
+                val tituloActualizado = txttituloSucursal.text.toString()
                 val anioActualizada = txtAnioApertura.text.toString()
-                val numeroEmpleadoActualizada = txtNumeroEmpleados.text.toString()
+                val numeroEmpleadosActualizada = txtNumeroEmpleados.text.toString()
                 val valoracionActualizada = valoracion.rating
-
-                if (!revisarText(nombreActualizado, anioActualizada, numeroEmpleadoActualizada, txtCategoria)) {
+                //Reviso si los TextFields están llenos
+                if (!revisarText(tituloActualizado, anioActualizada, numeroEmpleadosActualizada, txtCategoria)) {
                     val sucursalActualizada = hashMapOf<String, Any>(
-                        "nombre" to nombreActualizado,
-                        "anioFundacion" to anioActualizada.toInt(),
-                        "numero empleados" to numeroEmpleadoActualizada.toInt(),
+                        "nombreSucu" to tituloActualizado,
+                        "anioApertura" to anioActualizada.toInt(),
+                        "empleados" to numeroEmpleadosActualizada.toInt(),
                         "valoracion" to valoracionActualizada,
+                        "categoria" to txtCategoria.text.toString(),
                         "latitud" to latitud,
                         "longitud" to longitud,
                         "ubicacion" to ciudadSeleccionado
@@ -132,28 +146,30 @@ class CrearSucursal : AppCompatActivity() {
                         .addOnSuccessListener { Log.i("firebase", "Transaccion completa") }
                         .addOnFailureListener { Log.i("firebase", "ERROR al actualizar") }
 
-                    Toast.makeText(this, "Sucursal guardada", Toast.LENGTH_SHORT).show()
-                    if (nombreEmpresa != null) {
-                        abrirActividadConParametros(nombreEmpresa, idEmpresa, Vista_Sucursal::class.java)
 
+                    Toast.makeText(this, "Sucursal Actualizada", Toast.LENGTH_SHORT).show()
+                    if (nombreEmpresa != null) {
+                        abrirActividadConParametros(nombreEmpresa, idEmpresa!!, Vista_Sucursal::class.java)
                     }
                 }
             }
 
         } else {
             guardar.setOnClickListener {
-                val tituloAGuardar = txtnombreSucursal.text.toString()
+                val tituloAGuardar = txttituloSucursal.text.toString()
                 val anioAGuardar = txtAnioApertura.text.toString()
-                val numeroEmpleadoAGuardar = txtNumeroEmpleados.text.toString()
+                val numeroEmpleadosAGuardar = txtNumeroEmpleados.text.toString()
                 val valoracionNum = valoracion.rating
-                if (!revisarText(tituloAGuardar, anioAGuardar, numeroEmpleadoAGuardar, txtCategoria)) {
+                if (!revisarText(tituloAGuardar, anioAGuardar, numeroEmpleadosAGuardar, txtCategoria)) {
                     val db = Firebase.firestore
+                    //no puedo poner ID
                     val nuevaSucursal = hashMapOf<String, Any>(
                         "empresa" to idEmpresa!!,
-                        "nombre" to tituloAGuardar,
-                        "anioFundacion" to anioAGuardar.toInt(),
-                        "numeroEmpleados" to numeroEmpleadoAGuardar.toInt(),
+                        "nombreSucu" to tituloAGuardar,
+                        "anioApertura" to anioAGuardar.toInt(),
+                        "empleados" to numeroEmpleadosAGuardar.toInt(),
                         "valoracion" to valoracionNum,
+                        "categoria" to txtCategoria.text.toString(),
                         "latitud" to latitud,
                         "longitud" to longitud,
                         "ubicacion" to ciudadSeleccionado
@@ -164,6 +180,7 @@ class CrearSucursal : AppCompatActivity() {
                         }.addOnFailureListener {
                             Log.i("firebase-firestore", "Error al añadirSucursal")
                         }
+
                     Toast.makeText(this, "Sucursal guardada", Toast.LENGTH_SHORT).show()
                     if (nombreEmpresa != null) {
                         abrirActividadConParametros(nombreEmpresa, idEmpresa, Vista_Sucursal::class.java)
@@ -173,12 +190,13 @@ class CrearSucursal : AppCompatActivity() {
         }
     }
 
-    private fun revisarText(nombre: String, anio: String, numeroEmpleados: String, categoria: TextView): Boolean {
-        return if (TextUtils.isEmpty(nombre) || TextUtils.isEmpty(anio) || TextUtils.isEmpty(numeroEmpleados) || categoria.text.equals("Seleccione:")) {
+
+    private fun revisarText(nombre: String, anio: String, empleados: String, categoria: TextView): Boolean {
+        return if (TextUtils.isEmpty(nombre) || TextUtils.isEmpty(anio) || TextUtils.isEmpty(empleados) || categoria.text.equals("Seleccione:")) {
             Toast.makeText(this, "Llene todos los campos", Toast.LENGTH_SHORT).show()
             true
         } else {
-            if (anio.toInt() > 2021 || anio.toInt() < 1 || numeroEmpleados.toInt() < 1) {
+            if (anio.toInt() > 2021 || anio.toInt() < 1 || empleados.toInt() < 1) {
                 Toast.makeText(this, "Ingrese valores válidos", Toast.LENGTH_SHORT).show()
                 true
             } else {
@@ -187,11 +205,10 @@ class CrearSucursal : AppCompatActivity() {
         }
     }
 
-    private fun abrirActividadConParametros(empresa: String, idEmpresa: String?, clase: Class<*>) {
+    private fun abrirActividadConParametros(empresa: String, idiEmpresa: String, clase: Class<*>) {
         val intentExplicito = Intent(this, clase)
         intentExplicito.putExtra("nombreEmpresa", empresa)
-        intentExplicito.putExtra("idEmpresas", idEmpresa)
+        intentExplicito.putExtra("idEmpresa", idiEmpresa)
         startActivity(intentExplicito)
     }
-
 }
